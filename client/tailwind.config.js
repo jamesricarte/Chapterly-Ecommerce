@@ -18,6 +18,7 @@ export default {
         },
         custom: {
           'facebookColor': '#3C5A9A',
+          'appleBg': '#212121',
         }
       },
       backgroundImage: {
