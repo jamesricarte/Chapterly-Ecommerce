@@ -7,6 +7,7 @@ import {
   FaStarHalf,
   FaStarHalfAlt,
 } from "react-icons/fa";
+import Card from "../../components/Card";
 
 const Shop = () => {
   return (
@@ -19,30 +20,30 @@ const Shop = () => {
             Enjoy our exclusive promotions and Offers
           </p>
         </div>
-        <div className="flex mt-8">
-          <div className="w-1/4 text-primary-500">
-            <h2 className="mb-4 text-2xl font-semibold">Search Filter</h2>
-            <h3 className="mb-2 text-lg ">By Book Genre</h3>
-            <div className="flex flex-col justify-center mb-4">
-              <label className="block font-light">
+        <div className="flex gap-6 mt-8">
+          <div className="w-0/4 text-primary-500">
+            <h2 className="mb-4 text-xl font-semibold">Search Filter</h2>
+            <h3 className="mb-4 text-md ">By Book Genre</h3>
+            <div className="mb-4 ">
+              <label className="flex mb-2 text-sm font-light ">
                 <input type="checkbox" className="mr-2" />
                 Romance
               </label>
-              <label className="block font-light">
+              <label className="flex mb-2 text-sm font-light">
                 <input type="checkbox" className="mr-2" />
                 Fiction
               </label>
-              <label className="block font-light">
+              <label className="flex mb-2 text-sm font-light">
                 <input type="checkbox" className="mr-2" />
                 Mystery
               </label>
-              <p className="flex items-center gap-2 mt-4 mb-4 font-light">
+              <p className="flex items-center gap-2 mt-4 mb-4 text-sm font-light">
                 More
                 <FaAngleDown />
               </p>
               <hr className="w-48 border-primary-500" />
             </div>
-            <h3 className="mb-2 text-lg ">Ratings</h3>
+            <h3 className="mb-4 text-md ">Ratings</h3>
             <div className="mb-4">
               <div className="flex gap-3 mb-3 text-secondary-500">
                 <FaStar />
@@ -67,22 +68,22 @@ const Shop = () => {
                 <FaRegStar />
                 <p className="text-sm font-light">& Up</p>
               </div>
-              <p className="flex items-center gap-2 mt-4 mb-4 font-light">
+              <p className="flex items-center gap-2 mt-4 mb-4 text-sm font-light">
                 More
                 <FaAngleDown />
               </p>
               <hr className="w-48 mb-4 border-primary-500" />
-              <h3 className="mb-2 text-lg">Price Range</h3>
+              <h3 className="mb-2 text-md">Price Range</h3>
               <div className="flex items-center mb-4">
                 <input
-                  className="w-1/4 p-1 mr-2 border"
+                  className="w-1/2 p-1 mr-2 border"
                   type="number"
                   min="0"
                   max="100"
                   placeholder="Min"
                 />
                 <input
-                  className="w-1/4 p-1 mr-2 border "
+                  className="w-1/2 p-1 mr-2 border "
                   type="number"
                   min="0"
                   max="100"
@@ -96,6 +97,19 @@ const Shop = () => {
               <button className="w-[200px] text-sm p-2 text-white bg-primary-500">
                 Clear All
               </button>
+            </div>
+          </div>
+          <div className="mt-8">
+            <div>
+              <h1 className="mb-4 text-2xl font-bold text-primary-500">
+                Best Selling
+              </h1>
+              <div className="grid grid-cols-4 gap-4">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+              </div>
             </div>
           </div>
         </div>
