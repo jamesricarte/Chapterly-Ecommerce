@@ -13,6 +13,7 @@ import SubtleArt from "../../assets/images/books/the_subtle_journal.png";
 import EgoEnemy from "../../assets/images/books/ego_is_the_enemy.png";
 import LawsOfPower from "../../assets/images/books/48laws_canva.png";
 import DailyStoic from "../../assets/images/books/daily_stoic.png";
+import Footer from "../../components/Footer";
 
 const Shop = () => {
   return (
@@ -232,6 +233,7 @@ const Shop = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
