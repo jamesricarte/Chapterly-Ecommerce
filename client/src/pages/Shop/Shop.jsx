@@ -1,13 +1,18 @@
 import React from "react";
 import Nav from "../../components/Nav";
+import Card from "../../components/Card";
 import {
   FaAngleDown,
+  FaChevronCircleRight,
   FaRegStar,
   FaStar,
-  FaStarHalf,
   FaStarHalfAlt,
 } from "react-icons/fa";
-import Card from "../../components/Card";
+import { FaChevronCircleLeft } from "react-icons/fa";
+import SubtleArt from "../../assets/images/books/the_subtle_journal.png";
+import EgoEnemy from "../../assets/images/books/ego_is_the_enemy.png";
+import LawsOfPower from "../../assets/images/books/48laws_canva.png";
+import DailyStoic from "../../assets/images/books/daily_stoic.png";
 
 const Shop = () => {
   return (
@@ -20,7 +25,7 @@ const Shop = () => {
             Enjoy our exclusive promotions and Offers
           </p>
         </div>
-        <div className="flex gap-6 mt-8">
+        <div className="flex gap-10 mt-8">
           <div className="w-0/4 text-primary-500">
             <h2 className="mb-4 text-xl font-semibold">Search Filter</h2>
             <h3 className="mb-4 text-md ">By Book Genre</h3>
@@ -45,14 +50,14 @@ const Shop = () => {
             </div>
             <h3 className="mb-4 text-md ">Ratings</h3>
             <div className="mb-4">
-              <div className="flex gap-3 mb-3 text-secondary-500">
+              <div className="flex gap-3 mb-3 text-primary-500">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
               </div>
-              <div className="flex gap-3 mb-2 text-secondary-500">
+              <div className="flex gap-3 mb-2 text-primary-500">
                 <FaStar />
                 <FaStar />
                 <FaStar />
@@ -60,7 +65,7 @@ const Shop = () => {
                 <FaRegStar />
                 <p className="text-sm font-light">& Up</p>
               </div>
-              <div className="flex gap-3 mb-2 text-secondary-500">
+              <div className="flex gap-3 mb-2 text-primary-500">
                 <FaStar />
                 <FaStar />
                 <FaStar />
@@ -99,16 +104,116 @@ const Shop = () => {
               </button>
             </div>
           </div>
-          <div className="mt-8">
+          <div className="mt-12">
+            <div className="mb-12">
+              <div className="flex items-center justify-between mb-4">
+                <h1 className="text-2xl font-bold text-primary-500">
+                  Best Selling
+                </h1>
+                <div className="flex items-center gap-3 text-xl text-primary-500">
+                  <FaChevronCircleLeft className="text-primary-100" />
+                  <FaChevronCircleRight />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <Card
+                  image={EgoEnemy}
+                  author="Ryan Holiday"
+                  price="$ 59.99"
+                  genre="Self Improvement"
+                />
+                <Card
+                  image={SubtleArt}
+                  author="Mark Manson"
+                  price="$ 120.99"
+                  genre="Self Improvement"
+                />
+                <Card
+                  image={LawsOfPower}
+                  author="Mark Manson"
+                  price="$ 66.99"
+                  genre="Mental Fortitude"
+                />
+                <Card
+                  image={DailyStoic}
+                  author="Mark Manson"
+                  price="$ 88.99"
+                  genre="History"
+                />
+              </div>
+            </div>
+            <div className="mb-12">
+              <div className="flex items-center justify-between mb-4">
+                <h1 className="text-2xl font-bold text-primary-500">
+                  40% Sale
+                </h1>
+                <div className="flex items-center gap-3 text-xl text-primary-500">
+                  <FaChevronCircleLeft className="text-primary-100" />
+                  <FaChevronCircleRight />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <Card
+                  image={EgoEnemy}
+                  author="Ryan Holiday"
+                  price="$ 59.99"
+                  genre="Self Improvement"
+                />
+                <Card
+                  image={SubtleArt}
+                  author="Mark Manson"
+                  price="$ 120.99"
+                  genre="Self Improvement"
+                />
+                <Card
+                  image={LawsOfPower}
+                  author="Mark Manson"
+                  price="$ 66.99"
+                  genre="Self Improvement"
+                />
+                <Card
+                  image={DailyStoic}
+                  author="Mark Manson"
+                  price="$ 88.99"
+                  genre="Self Improvement"
+                />
+              </div>
+            </div>
             <div>
-              <h1 className="mb-4 text-2xl font-bold text-primary-500">
-                Best Selling
-              </h1>
-              <div className="grid grid-cols-4 gap-4">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+              <div className="flex items-center justify-between mb-4">
+                <h1 className="text-2xl font-bold text-primary-500">
+                  Pre Orders
+                </h1>
+                <div className="flex items-center gap-3 text-xl text-primary-500">
+                  <FaChevronCircleLeft className="text-primary-100" />
+                  <FaChevronCircleRight />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <Card
+                  image={EgoEnemy}
+                  author="Ryan Holiday"
+                  price="$ 59.99"
+                  genre="Self Improvement"
+                />
+                <Card
+                  image={SubtleArt}
+                  author="Mark Manson"
+                  price="$ 120.99"
+                  genre="Self Improvement"
+                />
+                <Card
+                  image={LawsOfPower}
+                  author="Mark Manson"
+                  price="$ 66.99"
+                  genre="Self Improvement"
+                />
+                <Card
+                  image={DailyStoic}
+                  author="Mark Manson"
+                  price="$ 88.99"
+                  genre="Self Improvement"
+                />
               </div>
             </div>
           </div>
