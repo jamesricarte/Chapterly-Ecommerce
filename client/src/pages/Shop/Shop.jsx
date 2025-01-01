@@ -50,14 +50,14 @@ const Shop = () => {
             </div>
             <h3 className="mb-4 text-md ">Ratings</h3>
             <div className="mb-4">
-              <div className="flex gap-3 mb-3 text-primary-500">
+              <div className="flex gap-3 mb-3 text-primary-300">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
               </div>
-              <div className="flex gap-3 mb-2 text-primary-500">
+              <div className="flex gap-3 mb-2 text-primary-300">
                 <FaStar />
                 <FaStar />
                 <FaStar />
@@ -65,7 +65,7 @@ const Shop = () => {
                 <FaRegStar />
                 <p className="text-sm font-light">& Up</p>
               </div>
-              <div className="flex gap-3 mb-2 text-primary-500">
+              <div className="flex gap-3 mb-2 text-primary-300">
                 <FaStar />
                 <FaStar />
                 <FaStar />
@@ -106,7 +106,7 @@ const Shop = () => {
           </div>
           <div className="mt-12">
             <div className="mb-12">
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-bold text-primary-500">
                   Best Selling
                 </h1>
@@ -121,29 +121,33 @@ const Shop = () => {
                   author="Ryan Holiday"
                   price="$ 59.99"
                   genre="Self Improvement"
+                  link="/product"
                 />
                 <Card
                   image={SubtleArt}
                   author="Mark Manson"
                   price="$ 120.99"
                   genre="Self Improvement"
+                  link="/product"
                 />
                 <Card
                   image={LawsOfPower}
-                  author="Mark Manson"
+                  author="Robert Greene"
                   price="$ 66.99"
                   genre="Mental Fortitude"
+                  link="/product"
                 />
                 <Card
                   image={DailyStoic}
-                  author="Mark Manson"
+                  author="Ryan Holiday"
                   price="$ 88.99"
                   genre="History"
+                  link="/product"
                 />
               </div>
             </div>
             <div className="mb-12">
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-bold text-primary-500">
                   40% Sale
                 </h1>
@@ -158,29 +162,33 @@ const Shop = () => {
                   author="Ryan Holiday"
                   price="$ 59.99"
                   genre="Self Improvement"
+                  link="/product"
                 />
                 <Card
                   image={SubtleArt}
                   author="Mark Manson"
                   price="$ 120.99"
                   genre="Self Improvement"
+                  link="/product"
                 />
                 <Card
                   image={LawsOfPower}
-                  author="Mark Manson"
+                  author="Robert Greene"
                   price="$ 66.99"
-                  genre="Self Improvement"
+                  genre="Mental Fortitude"
+                  link="/product"
                 />
                 <Card
                   image={DailyStoic}
-                  author="Mark Manson"
+                  author="Ryan Holiday"
                   price="$ 88.99"
-                  genre="Self Improvement"
+                  genre="History"
+                  link="/product"
                 />
               </div>
             </div>
-            <div>
-              <div className="flex items-center justify-between mb-4">
+            <div className="mb-14">
+              <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-bold text-primary-500">
                   Pre Orders
                 </h1>
@@ -195,27 +203,32 @@ const Shop = () => {
                   author="Ryan Holiday"
                   price="$ 59.99"
                   genre="Self Improvement"
+                  link="/product"
                 />
                 <Card
                   image={SubtleArt}
                   author="Mark Manson"
                   price="$ 120.99"
                   genre="Self Improvement"
+                  link="/product"
                 />
                 <Card
                   image={LawsOfPower}
-                  author="Mark Manson"
+                  author="Robert Greene"
                   price="$ 66.99"
-                  genre="Self Improvement"
+                  genre="Mental Fortitude"
+                  link="/product"
                 />
                 <Card
                   image={DailyStoic}
-                  author="Mark Manson"
+                  author="Ryan Holiday"
                   price="$ 88.99"
-                  genre="Self Improvement"
+                  genre="History"
+                  link="/product"
                 />
               </div>
             </div>
+            <div>{/* PAGINATION HERE  */}</div>
           </div>
         </div>
       </main>
