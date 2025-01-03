@@ -31,9 +31,15 @@ const Product = () => {
             <h2 className="mb-4 text-xl font-semibold text-secondary-500">
               MARK MANSON
             </h2>
-            <div className="flex gap-2 mb-4">
-              <p>Quantity</p>
-              <input type="text" />
+            <div className="flex items-center gap-2 mb-6">
+              <p className="text-sm font-semibold">Quantity</p>
+              <input
+                className="w-24 p-1 mr-2 placeholder-black border border-black "
+                type="number"
+                min="1"
+                max="100"
+                placeholder="1"
+              />
             </div>
             <div className="flex items-center gap-4 mb-10 ">
               <button className="p-3 rounded text-sm text-white bg-primary-500 w-[350px]">
@@ -44,11 +50,11 @@ const Product = () => {
                 <FiShare2 />
               </div>
             </div>
-            <p className="mb-6 text-sm text-gray-500">
-              Some in-stack items may be delayed.{" "}
+            <p className="mb-4 text-gray-500 text-md">
+              Some in-stack items may be delayed.
               <a className="text-black"> Learn more here</a>
             </p>
-            <p className="mb-8 text-md">
+            <p className="mb-8 leading-relaxed text-md">
               A refreshingly raw and honest guide to living a meaningful life by
               focusing only on what truly matters. Packed with humor, blunt
               wisdom, and no-nonsense advice, this book challenges the obsession
@@ -57,8 +63,11 @@ const Product = () => {
               ditching superficial expectations, and living authentically in a
               chaotic world. With...
             </p>
-            <a href="" className="text-sm font-light text-gray-500">
-              Full Description
+            <a
+              href=""
+              className="text-sm font-light text-gray-500 hover:underline"
+            >
+              FULL DESCRIPTION
             </a>
           </div>
         </div>
