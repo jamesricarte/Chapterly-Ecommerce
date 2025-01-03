@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
+        Pattaya: ["Pattaya", "serif"],
       },
       colors: {
         primary: {
@@ -37,8 +38,8 @@ export default {
         },
       },
       backgroundImage: {
-        "gradient-1":
-          "linear-gradient(to right, #006D77 0%, #9CD1CB 80%, #F3F9F9 100%)",
+        "gradient-1": "linear-gradient(to right, #006D77 0%, #9CD1CB 80%, #F3F9F9 100%)",
+          "gradient-2": 'linear-gradient(to bottom, #006D77 0%, #9CD1CB 30%, #F3F9F9 100%)',
       },
     },
   },
