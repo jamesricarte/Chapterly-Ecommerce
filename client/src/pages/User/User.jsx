@@ -1,6 +1,8 @@
 import React from 'react';
 import Nav from '../../components/Nav.jsx';
 import Footer from '../../components/Footer.jsx';
+import Book1 from '../../assets/images/books/ego_is_the_enemy.png';
+// import User from '../../assets/images/User/';
 
 const UserPage = () => {
   const orders = [
@@ -11,7 +13,6 @@ const UserPage = () => {
       price: 12.95,
       status: "To Ship",
       rating: 5,
-      image: "../../assets/images/books/ego_is_the_enemy.png"
     },
     {
       id: 2,
@@ -20,7 +21,6 @@ const UserPage = () => {
       price: 12.95,
       status: "To Ship",
       rating: 5,
-      image: "../../assets/images/books/ego_is_the_enemy.png"
     },
     {
       id: 3,
@@ -29,7 +29,6 @@ const UserPage = () => {
       price: 12.95,
       status: "To Ship",
       rating: 5,
-      image: "../../assets/images/books/ego_is_the_enemy.png"
     }
   ];
 
@@ -68,7 +67,7 @@ const UserPage = () => {
   const OrderCard = ({ order }) => (
     <div className="flex items-center gap-4 p-4 mb-4 border rounded">
       <img
-        src={order.image}
+        src={Book1}
         alt="Book cover"
         className="object-cover w-20"
       />
