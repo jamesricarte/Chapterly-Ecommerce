@@ -2,19 +2,20 @@ import "./styles/App.css";
 import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-import Hero from "./pages/Hero/Hero";
+import Home from "./pages/Home/Home";
 import Shop from "./pages/Shop/Shop";
 import Product from "./pages/Product/Product";
+import Cart from "./pages/Cart/Cart";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Shop />} />
         <Route path="/product" element={<Product />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );
