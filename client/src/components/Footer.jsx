@@ -56,7 +56,7 @@ const Footer = () => {
       <div className="text-white bg-black ">
         <div className="container flex justify-between px-4 py-4 mx-auto">
           <p>© 2025 | Semicolon Inc. | All Rights Reserved.</p>
-          <ul className="flex gap-4">
+          <ul className="flex gap-10">
             <li>Terms of Service</li>
             <li>Privacy Policy</li>
           </ul>

@@ -9,6 +9,7 @@ import {
   FaUser,
   FaShoppingCart,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -42,10 +43,9 @@ const Nav = () => {
           <p className="ml-1 text-xl italic text-primary-500">hapterly</p>
         </div>
         <ul className="flex gap-[19px] text-sm text-primary-500 cursor-pointer">
-          <li className="hover:text-secondary-500">
-            {/* <Link to="/">Home</Link> */}
-            Home
-          </li>
+          <Link to="/">
+            <li className="hover:text-secondary-500">Home</li>
+          </Link>
           <li className="hover:text-secondary-500">
             {/* <Link to="/shop">Shop</Link> */}
             Shop
@@ -59,8 +59,8 @@ const Nav = () => {
             Contact
           </li>
           <li className="hover:text-secondary-500">
-            {/* <Link to="/details">Details</Link> */}
-            Details
+            {/* <Link to="/deals">Deals</Link> */}
+            Deals
           </li>
           <li className="hover:text-secondary-500">
             {/* <Link to="/community">Community</Link> */}
