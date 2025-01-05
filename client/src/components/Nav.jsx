@@ -59,8 +59,8 @@ const Nav = () => {
             Contact
           </li>
           <li className="hover:text-secondary-500">
-            {/* <Link to="/details">Details</Link> */}
-            Details
+            {/* <Link to="/deals">Deals</Link> */}
+            Deals
           </li>
           <li className="hover:text-secondary-500">
             {/* <Link to="/community">Community</Link> */}

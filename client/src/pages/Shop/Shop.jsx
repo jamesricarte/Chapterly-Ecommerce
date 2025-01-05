@@ -8,6 +8,7 @@ import {
   FaStar,
   FaStarHalfAlt,
 } from "react-icons/fa";
+import { FiFilter } from "react-icons/fi";
 import { FaChevronCircleLeft } from "react-icons/fa";
 import SubtleArt from "../../assets/images/books/the_subtle_journal.png";
 import EgoEnemy from "../../assets/images/books/ego_is_the_enemy.png";
@@ -28,7 +29,10 @@ const Shop = () => {
         </div>
         <div className="flex gap-10 mt-8">
           <div className="w-0/4 text-primary-500">
-            <h2 className="mb-4 text-xl font-semibold">Search Filter</h2>
+            <div className="flex items-center gap-3 mb-4">
+              <FiFilter className="text-xl" />
+              <h2 className="text-xl font-semibold">Search Filter</h2>
+            </div>
             <h3 className="mb-4 text-md ">By Book Genre</h3>
             <div className="mb-4 ">
               <label className="flex mb-2 text-sm font-light ">
@@ -105,7 +109,7 @@ const Shop = () => {
               </button>
             </div>
           </div>
-          <div className="mt-12">
+          <div className="mt-14">
             <div className="mb-12">
               <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-bold text-primary-500">
