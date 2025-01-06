@@ -43,28 +43,23 @@ const Nav = () => {
           <p className="ml-1 text-xl italic text-primary-500">hapterly</p>
         </div>
         <ul className="flex gap-[19px] text-sm text-primary-500 cursor-pointer">
-          <Link to="/">
-            <li className="hover:text-secondary-500">Home</li>
-          </Link>
           <li className="hover:text-secondary-500">
-            {/* <Link to="/shop">Shop</Link> */}
-            Shop
+            <Link to="/">Home</Link>
           </li>
           <li className="hover:text-secondary-500">
-            {/* <Link to="/about">About</Link> */}
-            About
+            <Link to="/shop">Shop</Link>
           </li>
           <li className="hover:text-secondary-500">
-            {/* <Link to="/contact">Contact</Link> */}
-            Contact
+            <Link to="/about">About</Link>
           </li>
           <li className="hover:text-secondary-500">
-            {/* <Link to="/deals">Deals</Link> */}
-            Deals
+            <Link to="/contact">Contact</Link>
           </li>
           <li className="hover:text-secondary-500">
-            {/* <Link to="/community">Community</Link> */}
-            Community
+            <Link to="/deals">Deals</Link>
+          </li>
+          <li className="hover:text-secondary-500">
+            <Link to="/community">Community</Link>
           </li>
         </ul>
         <div className="flex items-center gap-4">
