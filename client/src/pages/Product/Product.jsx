@@ -13,7 +13,6 @@ import {
 } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 import Card from "../../components/Card";
-import { Link } from "react-router-dom";
 
 const Product = () => {
   return (
@@ -43,11 +42,9 @@ const Product = () => {
               />
             </div>
             <div className="flex items-center gap-4 mb-10 ">
-              <Link to="/cart">
-                <button className="p-3 rounded text-sm text-white bg-primary-500 w-[350px]">
-                  Add To Cart
-                </button>
-              </Link>
+              <button className="p-3 rounded text-sm text-white bg-primary-500 w-[350px]">
+                Add To Cart
+              </button>
               <div className="flex gap-2 text-lg text-primary-500">
                 <FaRegHeart />
                 <FiShare2 />

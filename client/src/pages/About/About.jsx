@@ -6,41 +6,29 @@ const HomePage = () => {
     <div>
       <Nav />
 
-      <section className="container flex flex-col justify-center gap-24 px-4 py-16 mx-auto">
-        <div>
-          <div
-            className="p-8 bg-gradient-1 h-80 rounded-tl-md rounded-tr-md rounded-bl-md"
-            style={{ borderBottomRightRadius: "180px" }}
-          >
-            <h1 className="pt-6 text-xl font-semibold text-white">
-              Welcome to Chapterly: Redefining the Joy of Reading
-            </h1>
-            <p className="mt-4 text-white">
-              A refreshingly raw and honest guide to living a meaningful life by
-              focusing only on what truly matters. Packed with humor, blunt
-              wisdom, and no-nonsense advice, this book challenges the obsession
-              with positivity and teaches you the liberating power of embracing
-              struggles and failures. It&apos;s about prioritizing your values,
-              ditching superficial expectations, and living authentically in a
-              chaotic world.
-            </p>
-          </div>
+      <section className="flex justify-center py-16">
+        <div className="w-4/5 p-8 bg-gradient-to-r from-[#007E71] to-[#83C5BE] rounded-tl-md rounded-tr-md rounded-bl-md" style={{ borderBottomRightRadius: '180px' }}>
+          <h1 className="text-xl pt-6 font-semibold text-white">
+            Welcome to Chapterly: Redefining the Joy of Reading
+          </h1>
+          <p className="mt-4 text-white">
+            A refreshingly raw and honest guide to living a meaningful life by focusing only on what truly matters. Packed with humor, blunt wisdom, and no-nonsense advice, this book challenges the obsession with positivity and teaches you the liberating power of embracing struggles and failures. It&apos;s about prioritizing your values, ditching superficial expectations, and living authentically in a chaotic world.
+          </p>
         </div>
+      </section>
 
-        {/* Latest Blogs Section */}
-
-        <div>
+      {/* Latest Blogs Section */}
+      <section className="py-16 px-8">
+        <div className="container mx-auto">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold text-primary-500">
-              Latest Blogs
-            </h2>
-            <button className="px-4 py-2 text-sm font-semibold text-white rounded-lg bg-primary-500">
+            <h2 className="text-3xl font-bold text-primary-500">Latest Blogs</h2>
+            <button className="px-4 py-2 text-sm font-semibold text-white bg-primary-500 rounded-lg">
               Sort by Date
             </button>
           </div>
 
           {/* Blog Cards Grid */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Blog Card */}
             {[...Array(6)].map((_, index) => (
               <div
@@ -50,12 +38,14 @@ const HomePage = () => {
                 <img
                   src={`/images/blog-${index + 1}.jpg`}
                   alt={`Blog ${index + 1}`}
-                  className="object-cover w-full h-40 rounded-lg"
+                  className="w-full h-40 object-cover rounded-lg"
                 />
                 <h3 className="mt-4 text-lg font-semibold text-primary-500">
                   Blog Title {index + 1}
                 </h3>
-                <p className="mt-2 text-sm text-secondary-500">Explain</p>
+                <p className="mt-2 text-sm text-secondary-500">
+                  Explain
+                </p>
               </div>
             ))}
           </div>
