@@ -50,12 +50,12 @@ const Cart = () => {
                     <h3 className="text-lg font-semibold text-secondary-300">
                       MARK MANSON
                     </h3>
-                    <div className="flex gap-2 mt-3">
-                      <FaStar color="#549DA4" size="19" />
-                      <FaStar color="#549DA4" size="19" />
-                      <FaStar color="#549DA4" size="19" />
-                      <FaStar color="#549DA4" size="19" />
-                      <FaStar color="#549DA4" size="19" />
+                    <div className="flex gap-2 mt-3 text-md text-primary-300">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
                     </div>
                   </div>
                   <div className="flex justify-between">
@@ -130,19 +130,19 @@ const Cart = () => {
                       <h2 className="text-xl font-semibold text-black">
                         THE SUBTLE ART OF NOT GIVING A F*CK
                       </h2>
-                      <p className="font-semibold text-[#CECECE] text-lg">
+                      <p className="font-semibold text-[#CECECE] text-md">
                         In stock
                       </p>
                     </div>
                     <h3 className="text-lg font-semibold text-secondary-300">
                       MARK MANSON
                     </h3>
-                    <div className="flex gap-2 mt-3">
-                      <FaStar color="#549DA4" size="19" />
-                      <FaStar color="#549DA4" size="19" />
-                      <FaStar color="#549DA4" size="19" />
-                      <FaStar color="#549DA4" size="19" />
-                      <FaStar color="#549DA4" size="19" />
+                    <div className="flex gap-2 mt-3 text-md text-primary-300">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
                     </div>
                   </div>
                   <div className="flex justify-between">
@@ -151,7 +151,7 @@ const Cart = () => {
                     </h4>
                     <div className="flex items-center gap-3">
                       <div className="border-2 border-[#CECECE] py-1 px-6 flex items-center gap-3 cursor-pointer">
-                        <h5 className="font-medium text-[#006D77]">Qty: 1</h5>
+                        <h5 className="font-medium text-primary-500">Qty: 1</h5>
                         <BsChevronDown
                           size={20}
                           color="#006D77"
@@ -223,7 +223,7 @@ const Cart = () => {
                 <p className="text-[#484848] font-semibold mb-2">Total</p>
                 <p className="text-[#484848] font-semibold">$38.56</p>
               </div>
-              <button className="w-full py-3 font-bold text-white transition duration-300 ease-in-out px-11 bg-primary-500 hover:bg-primary-300">
+              <button className="w-full py-3 font-bold text-white px-11 bg-primary-500 hover-preset-1">
                 Checkout Now
               </button>
             </div>
@@ -256,7 +256,7 @@ const Cart = () => {
                 </p>
               </div>
               <div>
-                <button className="py-2 text-xs text-white transition duration-300 ease-in-out px-7 bg-primary-500 hover:bg-primary-300 ">
+                <button className="py-2 text-xs text-white px-7 bg-primary-500 hover-preset-1 ">
                   Apply Now
                 </button>
               </div>
@@ -272,7 +272,7 @@ const Cart = () => {
                 </p>
               </div>
               <div>
-                <button className="py-2 text-xs text-white transition duration-300 ease-in-out px-7 bg-primary-500 hover:bg-primary-300">
+                <button className="py-2 text-xs text-white px-7 bg-primary-500 hover-preset-1">
                   Apply Now
                 </button>
               </div>
