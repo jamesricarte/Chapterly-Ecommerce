@@ -18,6 +18,7 @@ import ProductImage4 from "../../assets/images/products/dailystoicsz.png";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { HiChevronRight } from "react-icons/hi";
 import { HiChevronLeft } from "react-icons/hi";
+import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -31,15 +32,15 @@ const Home = () => {
             src={HeroBannerImage}
             alt="Hero banner"
           />
-          <div>
-            <button className="absolute px-11 py-3 text-2xl font-bold text-white bg-primary-500 rounded-xl bottom-[32%] left-[6.5%] hover-preset-1">
+          <div className="container px-4 mx-auto">
+            <button className="absolute px-11 py-3 text-2xl font-bold text-white bg-primary-500 rounded-xl bottom-[32%] left-[6.5%]">
               Shop Now
             </button>
             <div className="absolute flex gap-3 transform -translate-x-1/2 bottom-6 left-1/2">
-              <div className="w-4 h-4 border rounded-full border-secondary-500 bg-secondary-500"></div>
-              <div className="w-4 h-4 bg-white border rounded-full"></div>
-              <div className="w-4 h-4 bg-white border rounded-full"></div>
-              <div className="w-4 h-4 bg-white border rounded-full"></div>
+              <div className="w-4 h-4 border border-black rounded-full bg-secondary-500"></div>
+              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
+              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
+              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
             </div>
           </div>
         </section>
@@ -68,7 +69,7 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-1 mt-8">
               <div className="relative flex items-center justify-center">
                 <img className="w-full" src={PromotionImage1} />
-                <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%] hover-preset-1">
+                <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%]">
                   Buy now
                 </button>
                 <div className="absolute flex gap-3 transform -translate-x-1/2 bottom-12 left-1/2">
@@ -82,7 +83,7 @@ const Home = () => {
               <div className="grid gap-4 p-4 grid-row-2">
                 <div className="relative flex items-center justify-center">
                   <img className="w-full" src={PromotionImage2} />
-                  <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%] hover-preset-1">
+                  <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%]">
                     Buy now
                   </button>
                 </div>
@@ -101,155 +102,129 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        <section className="container px-4 mx-auto mb-16">
-          <div className="flex items-center justify-between mb-9">
-            <h3 className="text-2xl font-bold text-primary-500">
-              Recommendations
-            </h3>
-            <div className="flex gap-4">
-              <div className="p-1 rounded-full cursor-pointer bg-primary-100">
-                <HiChevronLeft color="white" size="27" />
-              </div>
-              <div className="p-1 rounded-full cursor-pointer bg-primary-500">
-                <HiChevronRight color="white" size="27" />
+        <section className="container px-4 mx-auto">
+          <div className="mb-12">
+            <div className="flex items-center justify-between mb-6">
+              <h1 className="text-2xl font-bold text-primary-500">
+                Recommendations
+              </h1>
+              <div className="flex items-center gap-3 text-xl text-primary-500">
+                <FaChevronCircleLeft className="text-primary-100" />
+                <FaChevronCircleRight />
               </div>
             </div>
-          </div>
-
-          <div className="flex justify-between gap-9">
-            <Card
-              image={ProductImage1}
-              author="Author's Name"
-              price="$105"
-              genre="Romance"
-              ratingDisplay="hidden"
-              cartDisplay="hidden"
-            />
-            <div className="flex gap-9">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <Card
+                image={ProductImage1}
+                author="Ryan Holiday"
+                price="$ 59.99"
+                genre="Self Improvement"
+                link="/product"
+              />
               <Card
                 image={ProductImage2}
-                author="Author's Name"
-                price="$105"
-                genre="Romance"
-                ratingDisplay="hidden"
-                cartDisplay="hidden"
+                author="Mark Manson"
+                price="$ 120.99"
+                genre="Self Improvement"
+                link="/product"
               />
               <Card
                 image={ProductImage3}
-                author="Author's Name"
-                price="$105"
-                genre="Romance"
-                ratingDisplay="hidden"
-                cartDisplay="hidden"
+                author="Robert Greene"
+                price="$ 66.99"
+                genre="Mental Fortitude"
+                link="/product"
+              />
+              <Card
+                image={ProductImage4}
+                author="Ryan Holiday"
+                price="$ 88.99"
+                genre="History"
+                link="/product"
               />
             </div>
-            <Card
-              image={ProductImage4}
-              author="Author's Name"
-              price="$105"
-              genre="Romance"
-              ratingDisplay="hidden"
-              cartDisplay="hidden"
-            />
           </div>
-          <div className="flex items-center justify-between mt-10 mb-9">
-            <h3 className="text-2xl font-bold text-primary-500">
-              Trending Books
-            </h3>
-            <div className="flex gap-4">
-              <div className="p-1 rounded-full cursor-pointer bg-primary-100">
-                <HiChevronLeft color="white" size="27" />
-              </div>
-              <div className="p-1 rounded-full cursor-pointer bg-primary-500">
-                <HiChevronRight color="white" size="27" />
+          <div className="mb-12">
+            <div className="flex items-center justify-between mb-6">
+              <h1 className="text-2xl font-bold text-primary-500">
+                Trending Books
+              </h1>
+              <div className="flex items-center gap-3 text-xl text-primary-500">
+                <FaChevronCircleLeft className="text-primary-100" />
+                <FaChevronCircleRight />
               </div>
             </div>
-          </div>
-          <div className="flex justify-between gap-9">
-            <Card
-              image={ProductImage1}
-              author="Author's Name"
-              price="$105"
-              genre="Romance"
-              ratingDisplay="hidden"
-              cartDisplay="hidden"
-            />
-            <div className="flex gap-9">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <Card
+                image={ProductImage1}
+                author="Ryan Holiday"
+                price="$ 59.99"
+                genre="Self Improvement"
+                link="/product"
+              />
               <Card
                 image={ProductImage2}
-                author="Author's Name"
-                price="$105"
-                genre="Romance"
-                ratingDisplay="hidden"
-                cartDisplay="hidden"
+                author="Mark Manson"
+                price="$ 120.99"
+                genre="Self Improvement"
+                link="/product"
               />
               <Card
                 image={ProductImage3}
-                author="Author's Name"
-                price="$105"
-                genre="Romance"
-                ratingDisplay="hidden"
-                cartDisplay="hidden"
+                author="Robert Greene"
+                price="$ 66.99"
+                genre="Mental Fortitude"
+                link="/product"
+              />
+              <Card
+                image={ProductImage4}
+                author="Ryan Holiday"
+                price="$ 88.99"
+                genre="History"
+                link="/product"
               />
             </div>
-            <Card
-              image={ProductImage4}
-              author="Author's Name"
-              price="$105"
-              genre="Romance"
-              ratingDisplay="hidden"
-              cartDisplay="hidden"
-            />
           </div>
-          <div className="flex items-center justify-between mt-10 mb-8">
-            <h3 className="text-2xl font-bold text-primary-500">
-              Exclusive Editions
-            </h3>
-            <div className="flex gap-4">
-              <div className="p-1 rounded-full cursor-pointer bg-primary-100">
-                <HiChevronLeft color="white" size="27" />
-              </div>
-              <div className="p-1 rounded-full cursor-pointer bg-primary-500">
-                <HiChevronRight color="white" size="27" />
+          <div className="mb-14">
+            <div className="flex items-center justify-between mb-6">
+              <h1 className="text-2xl font-bold text-primary-500">
+                Exclusive Editions
+              </h1>
+              <div className="flex items-center gap-3 text-xl text-primary-500">
+                <FaChevronCircleLeft className="text-primary-100" />
+                <FaChevronCircleRight />
               </div>
             </div>
-          </div>
-          <div className="flex justify-between gap-9">
-            <Card
-              image={ProductImage1}
-              author="Author's Name"
-              price="$105"
-              genre="Romance"
-              ratingDisplay="hidden"
-              cartDisplay="hidden"
-            />
-            <div className="flex gap-9">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <Card
+                image={ProductImage1}
+                author="Ryan Holiday"
+                price="$ 59.99"
+                genre="Self Improvement"
+                link="/product"
+              />
               <Card
                 image={ProductImage2}
-                author="Author's Name"
-                price="$105"
-                genre="Romance"
-                ratingDisplay="hidden"
-                cartDisplay="hidden"
+                author="Mark Manson"
+                price="$ 120.99"
+                genre="Self Improvement"
+                link="/product"
               />
               <Card
                 image={ProductImage3}
-                author="Author's Name"
-                price="$105"
-                genre="Romance"
-                ratingDisplay="hidden"
-                cartDisplay="hidden"
+                author="Robert Greene"
+                price="$ 66.99"
+                genre="Mental Fortitude"
+                link="/product"
+              />
+              <Card
+                image={ProductImage4}
+                author="Ryan Holiday"
+                price="$ 88.99"
+                genre="History"
+                link="/product"
               />
             </div>
-            <Card
-              image={ProductImage4}
-              author="Author's Name"
-              price="$105"
-              genre="Romance"
-              ratingDisplay="hidden"
-              cartDisplay="hidden"
-            />
           </div>
         </section>
       </main>
