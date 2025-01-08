@@ -20,11 +20,11 @@ const Cart = () => {
     <>
       <Nav />
       <div className=" bg-secondary-50">
-        <div className="container flex h-screen gap-10 px-4 py-8 mx-auto ">
-          <div className="flex flex-col ">
-            <div className="flex items-center gap-4 bg-white shadow-md pl-9 py-7">
+        <div className="container flex h-screen gap-5 px-4 py-8 mx-auto ">
+          <div className="flex flex-col flex-grow ">
+            <div className="flex items-center w-full gap-4 bg-white shadow-md pl-9 py-7">
               <div className="w-8 h-8 border-[3px] border-primary-500"></div>
-              <h3 className="text-[28px] font-semibold text-primary-500">
+              <h3 className="text-2xl font-semibold text-primary-500">
                 ALL ITEMS (2)
               </h3>
             </div>
@@ -40,14 +40,14 @@ const Cart = () => {
                 <div className="flex flex-col justify-between w-full">
                   <div>
                     <div className="flex items-center justify-between w-full">
-                      <h2 className="text-[28px] font-semibold text-black">
+                      <h2 className="text-xl font-semibold text-black">
                         THE SUBTLE ART OF NOT GIVING A F*CK
                       </h2>
-                      <p className="font-semibold text-[#CECECE] text-lg">
+                      <p className="font-semibold text-[#CECECE] text-sm">
                         In stock
                       </p>
                     </div>
-                    <h3 className="text-[22px] font-semibold text-secondary-300">
+                    <h3 className="text-lg font-semibold text-secondary-300">
                       MARK MANSON
                     </h3>
                     <div className="flex gap-2 mt-3">
@@ -59,7 +59,7 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="flex justify-between">
-                    <h4 className="font-semibold text-[26px] text-primary-500">
+                    <h4 className="text-lg font-semibold text-primary-500">
                       $12.95
                     </h4>
                     <div className="flex items-center gap-3">
@@ -127,14 +127,14 @@ const Cart = () => {
                 <div className="flex flex-col justify-between w-full">
                   <div>
                     <div className="flex items-center justify-between w-full">
-                      <h2 className="text-[28px] font-semibold text-black">
+                      <h2 className="text-xl font-semibold text-black">
                         THE SUBTLE ART OF NOT GIVING A F*CK
                       </h2>
                       <p className="font-semibold text-[#CECECE] text-lg">
                         In stock
                       </p>
                     </div>
-                    <h3 className="text-[22px] font-semibold text-secondary-300">
+                    <h3 className="text-lg font-semibold text-secondary-300">
                       MARK MANSON
                     </h3>
                     <div className="flex gap-2 mt-3">
@@ -146,7 +146,7 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="flex justify-between">
-                    <h4 className="font-semibold text-[26px] text-primary-500">
+                    <h4 className="text-lg font-semibold text-primary-500">
                       $12.95
                     </h4>
                     <div className="flex items-center gap-3">
@@ -205,7 +205,7 @@ const Cart = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 w-[600px]">
+          <div className="flex flex-col gap-5 w-[500px]">
             <div className="flex flex-col w-full gap-3 bg-white shadow-md p-7">
               <h3 className="mt-1 mb-2 text-2xl font-semibold text-primary-500">
                 Order Summary
@@ -223,7 +223,7 @@ const Cart = () => {
                 <p className="text-[#484848] font-semibold mb-2">Total</p>
                 <p className="text-[#484848] font-semibold">$38.56</p>
               </div>
-              <button className="w-full py-3 font-bold text-white px-11 bg-primary-500">
+              <button className="w-full py-3 font-bold text-white transition duration-300 ease-in-out px-11 bg-primary-500 hover:bg-primary-300">
                 Checkout Now
               </button>
             </div>
@@ -256,7 +256,7 @@ const Cart = () => {
                 </p>
               </div>
               <div>
-                <button className="py-2 text-xs text-white px-7 bg-primary-500">
+                <button className="py-2 text-xs text-white transition duration-300 ease-in-out px-7 bg-primary-500 hover:bg-primary-300 ">
                   Apply Now
                 </button>
               </div>
@@ -272,7 +272,7 @@ const Cart = () => {
                 </p>
               </div>
               <div>
-                <button className="py-2 text-xs text-white px-7 bg-primary-500">
+                <button className="py-2 text-xs text-white transition duration-300 ease-in-out px-7 bg-primary-500 hover:bg-primary-300">
                   Apply Now
                 </button>
               </div>

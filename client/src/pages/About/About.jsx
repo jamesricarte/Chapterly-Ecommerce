@@ -1,5 +1,6 @@
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
+import { FaChevronCircleRight } from "react-icons/fa";
 
 const HomePage = () => {
   return (
@@ -34,7 +35,7 @@ const HomePage = () => {
             <h2 className="text-3xl font-bold text-primary-500">
               Latest Blogs
             </h2>
-            <button className="px-4 py-2 text-sm font-semibold text-white rounded-lg bg-primary-500">
+            <button className="px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-lg bg-primary-500 hover:bg-primary-300">
               Sort by Date
             </button>
           </div>
@@ -61,22 +62,21 @@ const HomePage = () => {
           </div>
 
           {/* Pagination */}
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center mt-14">
             <nav>
-              <ul className="flex space-x-4">
+              <ul className="flex items-center space-x-4">
                 {[1, 2, 3, 4, 5].map((page) => (
-                  <li key={page}>
+                  <li key={page} className="text-md">
                     <button
-                      className={`px-4 py-2 rounded-lg ${
-                        page === 1
-                          ? "bg-primary-500 text-white"
-                          : "bg-gray-100 text-primary-500"
+                      className={`w-7 h-7 flex  items-center justify-center rounded-full  text-primary-500 ${
+                        page === 1 ? "bg-primary-100" : ""
                       }`}
                     >
                       {page}
                     </button>
                   </li>
                 ))}
+                <FaChevronCircleRight className="text-2xl text-primary-500" />
               </ul>
             </nav>
           </div>

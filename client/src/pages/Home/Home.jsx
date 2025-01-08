@@ -25,24 +25,24 @@ const Home = () => {
       <Nav />
 
       <main>
-        <div className="relative ">
+        <section className="relative">
           <img
-            className="object-cover w-full h-full "
+            className="object-cover w-full"
             src={HeroBannerImage}
             alt="Hero banner"
           />
-          <div className="container px-4 mx-auto">
+          <div>
             <button className="absolute px-11 py-3 text-2xl font-bold text-white bg-primary-500 rounded-xl bottom-[32%] left-[6.5%]">
               Shop Now
             </button>
             <div className="absolute flex gap-3 transform -translate-x-1/2 bottom-6 left-1/2">
-              <div className="w-4 h-4 border border-black rounded-full bg-secondary-500"></div>
-              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
-              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
-              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
+              <div className="w-4 h-4 border rounded-full border-secondary-500 bg-secondary-500"></div>
+              <div className="w-4 h-4 bg-white border rounded-full"></div>
+              <div className="w-4 h-4 bg-white border rounded-full"></div>
+              <div className="w-4 h-4 bg-white border rounded-full"></div>
             </div>
           </div>
-        </div>
+        </section>
 
         <section className="py-16 mb-16 bg-gradient-2">
           <div className="container px-4 mx-auto">
