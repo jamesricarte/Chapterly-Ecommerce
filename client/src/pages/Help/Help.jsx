@@ -63,10 +63,10 @@ function HelpPage() {
     <>
       <Nav />
 
-      <div className="flex flex-col items-center w-screen min-h-screen py-16 overflow-x-hidden bg-white">
+      <main className="flex flex-col items-center w-screen min-h-screen py-16 overflow-x-hidden bg-white">
         <div className="w-full px-4 mb-16 text-center max-w-7xl">
           <h1 className="mb-4 text-4xl font-bold text-emerald-900">
-            Welcome to the help page!
+            Get the Help You Need
           </h1>
           <p className="mb-8 text-lg text-emerald-900">
             Here you can find answers to common questions, troubleshoot any
@@ -100,7 +100,7 @@ function HelpPage() {
         <div className="grid w-full grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3 max-w-7xl">
           {renderCategories()}
         </div>
-      </div>
+      </main>
 
       <Footer />
     </>

@@ -100,11 +100,11 @@ const Shop = () => {
                   placeholder="Max"
                 />
               </div>
-              <button className="w-[200px] text-sm p-2 text-white bg-primary-500 mb-4">
+              <button className="w-[200px] text-sm p-2 text-white bg-primary-500 mb-4 hover-preset-1">
                 Apply
               </button>
               <hr className="w-48 mb-4 border-primary-500" />
-              <button className="w-[200px] text-sm p-2 text-white bg-primary-500">
+              <button className="w-[200px] text-sm p-2 text-white bg-primary-500 hover-preset-1">
                 Clear All
               </button>
             </div>
@@ -233,7 +233,40 @@ const Shop = () => {
                 />
               </div>
             </div>
-            <div>{/* PAGINATION HERE  */}</div>
+            <div className="flex justify-center mb-10">
+              <nav>
+                <ul className="flex items-center space-x-4">
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 bg-primary-100 text-primary-500">
+                      1
+                    </button>
+                  </li>
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 text-primary-500">
+                      2
+                    </button>
+                  </li>
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 text-primary-500">
+                      3
+                    </button>
+                  </li>
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 text-primary-500">
+                      4
+                    </button>
+                  </li>
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 text-primary-500">
+                      5
+                    </button>
+                  </li>
+                  <li className="text-2xl text-primary-500">
+                    <FaChevronCircleRight />
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </main>

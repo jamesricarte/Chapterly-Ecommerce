@@ -44,7 +44,7 @@ const Product = () => {
             </div>
             <div className="flex items-center gap-4 mb-10 ">
               <Link to="/cart">
-                <button className="p-3 rounded text-sm text-white bg-primary-500 w-[350px]">
+                <button className="p-3 rounded text-sm text-white bg-primary-500 w-[350px] hover-preset-1">
                   Add To Cart
                 </button>
               </Link>

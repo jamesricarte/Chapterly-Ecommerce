@@ -72,8 +72,12 @@ const Nav = () => {
             <FaSearch className="absolute text-xs transform-translate-y-1/2 top-1/3 left-3 text-secondary-500" />
           </div>
           <div className="flex items-center gap-3 text-md text-secondary-500">
-            <FaUser />
-            <FaShoppingCart />
+            <Link to="/user">
+              <FaUser />
+            </Link>
+            <Link to="/cart">
+              <FaShoppingCart />
+            </Link>
           </div>
         </div>
       </div>

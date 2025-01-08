@@ -14,17 +14,19 @@ import AmericanExpresLogo from "../../assets/images/brand_logos/american-express
 import GooglePayLogo from "../../assets/images/brand_logos/google-pay-logo.png";
 import PaypalLogo from "../../assets/images/brand_logos/paypal-logo.png";
 import ApplePayLogo from "../../assets/images/brand_logos/apple-pay-logo.jpg";
+import { FiDelete } from "react-icons/fi";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 const Cart = () => {
   return (
     <>
       <Nav />
-      <div className=" bg-secondary-50">
+      <main className=" bg-secondary-50">
         <div className="container flex h-screen gap-5 px-4 py-8 mx-auto ">
           <div className="flex flex-col flex-grow ">
             <div className="flex items-center w-full gap-4 bg-white shadow-md pl-9 py-7">
               <div className="w-8 h-8 border-[3px] border-primary-500"></div>
-              <h3 className="text-2xl font-semibold text-primary-500">
+              <h3 className="text-xl font-semibold text-primary-500">
                 ALL ITEMS (2)
               </h3>
             </div>
@@ -40,14 +42,14 @@ const Cart = () => {
                 <div className="flex flex-col justify-between w-full">
                   <div>
                     <div className="flex items-center justify-between w-full">
-                      <h2 className="text-xl font-semibold text-black">
+                      <h2 className="text-lg font-semibold text-black">
                         THE SUBTLE ART OF NOT GIVING A F*CK
                       </h2>
                       <p className="font-semibold text-[#CECECE] text-sm">
                         In stock
                       </p>
                     </div>
-                    <h3 className="text-lg font-semibold text-secondary-300">
+                    <h3 className="font-semibold text-md text-secondary-300">
                       MARK MANSON
                     </h3>
                     <div className="flex gap-2 mt-3 text-md text-primary-300">
@@ -62,54 +64,16 @@ const Cart = () => {
                     <h4 className="text-lg font-semibold text-primary-500">
                       $12.95
                     </h4>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 text-primary-500">
                       <div className="border-2 border-[#CECECE] py-1 px-6 flex items-center gap-3 cursor-pointer">
-                        <h5 className="font-medium text-[#006D77]">Qty: 1</h5>
-                        <BsChevronDown
-                          size={20}
-                          color="#006D77"
-                          style={{
-                            stroke: "#006D77",
-                            strokeWidth: 0.5,
-                          }}
-                        />
+                        <h5 className="font-medium ">Qty: 1</h5>
+                        <BsChevronDown />
                       </div>
 
-                      <div className="flex items-center gap-3">
-                        <IoIosSearch
-                          className="cursor-pointer"
-                          color="#006D77"
-                          size={26}
-                          style={{
-                            stroke: "#006D77",
-                            strokeWidth: 8,
-                          }}
-                        />
-                        <HiOutlineHeart
-                          className="cursor-pointer"
-                          color="#006D77"
-                          size={26}
-                          style={{
-                            stroke: "#006D77",
-                            strokeWidth: 2,
-                          }}
-                        />
-
-                        {/* Hero icon */}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="cursor-pointer h-7 w-7"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="#006D77"
-                          strokeWidth={1.6}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                          />
-                        </svg>
+                      <div className="flex items-center gap-3 text-xl text-primary-500">
+                        <IoIosSearch />
+                        <HiOutlineHeart />
+                        <RiDeleteBinLine />
                       </div>
                     </div>
                   </div>
@@ -127,14 +91,14 @@ const Cart = () => {
                 <div className="flex flex-col justify-between w-full">
                   <div>
                     <div className="flex items-center justify-between w-full">
-                      <h2 className="text-xl font-semibold text-black">
+                      <h2 className="text-lg font-semibold text-black">
                         THE SUBTLE ART OF NOT GIVING A F*CK
                       </h2>
-                      <p className="font-semibold text-[#CECECE] text-md">
+                      <p className="font-semibold text-[#CECECE] text-sm">
                         In stock
                       </p>
                     </div>
-                    <h3 className="text-lg font-semibold text-secondary-300">
+                    <h3 className="font-semibold text-md text-secondary-300">
                       MARK MANSON
                     </h3>
                     <div className="flex gap-2 mt-3 text-md text-primary-300">
@@ -149,54 +113,16 @@ const Cart = () => {
                     <h4 className="text-lg font-semibold text-primary-500">
                       $12.95
                     </h4>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 text-primary-500">
                       <div className="border-2 border-[#CECECE] py-1 px-6 flex items-center gap-3 cursor-pointer">
-                        <h5 className="font-medium text-primary-500">Qty: 1</h5>
-                        <BsChevronDown
-                          size={20}
-                          color="#006D77"
-                          style={{
-                            stroke: "#006D77",
-                            strokeWidth: 0.5,
-                          }}
-                        />
+                        <h5 className="font-medium">Qty: 1</h5>
+                        <BsChevronDown />
                       </div>
 
-                      <div className="flex items-center gap-3">
-                        <IoIosSearch
-                          className="cursor-pointer"
-                          color="#006D77"
-                          size={26}
-                          style={{
-                            stroke: "#006D77",
-                            strokeWidth: 8,
-                          }}
-                        />
-                        <HiOutlineHeart
-                          className="cursor-pointer"
-                          color="#006D77"
-                          size={26}
-                          style={{
-                            stroke: "#006D77",
-                            strokeWidth: 2,
-                          }}
-                        />
-
-                        {/* Hero icon */}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="cursor-pointer h-7 w-7"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="#006D77"
-                          strokeWidth={1.6}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                          />
-                        </svg>
+                      <div className="flex items-center gap-3 text-xl">
+                        <IoIosSearch />
+                        <HiOutlineHeart />
+                        <RiDeleteBinLine />
                       </div>
                     </div>
                   </div>
@@ -279,7 +205,7 @@ const Cart = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );
