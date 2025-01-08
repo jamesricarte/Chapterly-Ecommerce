@@ -6,7 +6,7 @@ const HomePage = () => {
     <div>
       <Nav />
 
-      <section className="container flex flex-col justify-center gap-24 px-4 py-16 mx-auto">
+      <main className="container flex flex-col justify-center gap-24 px-4 py-16 mx-auto">
         <div>
           <div
             className="p-8 bg-gradient-1 h-80 rounded-tl-md rounded-tr-md rounded-bl-md"
@@ -81,7 +81,7 @@ const HomePage = () => {
             </nav>
           </div>
         </div>
-      </section>
+      </main>
 
       <Footer />
     </div>
