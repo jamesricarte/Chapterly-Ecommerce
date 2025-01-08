@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../../components/Nav.jsx";
 import Footer from "../../components/Footer.jsx";
 import Book1 from "../../assets/images/books/ego_is_the_enemy.png";
+import { FaStar } from "react-icons/fa";
 // import User from '../../assets/images/User/';
 
 const UserPage = () => {
@@ -51,7 +52,7 @@ const UserPage = () => {
   );
 
   const OrderTabs = () => (
-    <div className="flex gap-4 mb-4 border-b">
+    <div className="flex gap-4 mb-6">
       {[
         "All",
         "To Pay",
@@ -74,27 +75,33 @@ const UserPage = () => {
   );
 
   const StarRating = ({ rating }) => (
-    <div className="flex text-yellow-400">
+    <div className="flex gap-2 mb-12 text-primary-300">
       {[...Array(rating)].map((_, i) => (
-        <span key={i}>★</span>
+        <FaStar key={i} />
       ))}
     </div>
   );
 
   const OrderCard = ({ order }) => (
     <div className="flex items-center gap-4 p-4 mb-5 border rounded shadow-md">
-      <img src={Book1} alt="Book cover" className="object-cover w-20" />
+      <img src={Book1} alt="Book cover" className="object-cover w-28" />
       <div className="flex-grow">
-        <h3 className="font-bold">{order.title}</h3>
-        <p className="text-teal-500">{order.author}</p>
+        <h3 className="text-lg font-semibold">{order.title}</h3>
+        <p className="mb-2 text-lg font-semibold text-secondary-500">
+          {order.author}
+        </p>
         <StarRating rating={order.rating} />
-        <p className="font-bold">${order.price}</p>
+        <p className="font-bold text-primary-500">${order.price}</p>
       </div>
       <div className="flex flex-col items-end gap-2">
-        <button className="text-red-500">Cancel Order</button>
+        <div className="p-2 mb-20 font-semibold border border-gray-300 text-primary-500 hover-preset-2">
+          <button>Cancel Order</button>
+        </div>
         <div className="text-sm text-gray-500">
-          <span>Delivery status | </span>
-          <span>{order.status}</span>
+          <span className="font-semibold text-primary-300">
+            Delivery status |{" "}
+          </span>
+          <span className="text-[#CECECE]">{order.status}</span>
         </div>
       </div>
     </div>
@@ -107,18 +114,18 @@ const UserPage = () => {
         <div className="grid grid-cols-4 gap-5">
           <div>
             <UserProfile />
-            <div className="mt-4">
-              <ul className="space-y-2">
-                <li className="text-teal-600">
+            <div className="mt-4 text-primary-500">
+              <ul className="space-y-2 font-semibold">
+                <li>
                   <a href="#">Account Settings</a>
                 </li>
-                <li className="text-teal-600">
+                <li>
                   <a href="#">My Purchase</a>
                 </li>
-                <li className="text-teal-600">
+                <li>
                   <a href="#">My Vouchers</a>
                 </li>
-                <li className="text-teal-600">
+                <li>
                   <a href="#">Notifications</a>
                 </li>
               </ul>

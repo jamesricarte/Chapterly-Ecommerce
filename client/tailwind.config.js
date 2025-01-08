@@ -54,6 +54,13 @@ export default {
             backgroundColor: "#549DA4",
           },
         },
+        ".hover-preset-2": {
+          transition: "all 0.3s ease-in-out",
+          "&:hover": {
+            backgroundColor: "#006d77",
+            color: "#FFFFFF",
+          },
+        },
       });
     },
   ],
