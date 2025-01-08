@@ -110,7 +110,7 @@ const UserPage = () => {
   return (
     <div>
       <Nav />
-      <div className="container h-screen px-4 pt-8 mx-auto">
+      <main className="container h-screen px-4 pt-8 mx-auto">
         <div className="grid grid-cols-4 gap-5">
           <div>
             <UserProfile />
@@ -138,7 +138,7 @@ const UserPage = () => {
             ))}
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );
