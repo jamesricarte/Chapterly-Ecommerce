@@ -35,7 +35,7 @@ const HomePage = () => {
             <h2 className="text-3xl font-bold text-primary-500">
               Latest Blogs
             </h2>
-            <button className="px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-lg bg-primary-500 hover:bg-primary-300">
+            <button className="px-4 py-2 text-sm font-semibold text-white rounded-lg bg-primary-500 hover-preset-1">
               Sort by Date
             </button>
           </div>

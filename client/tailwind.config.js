@@ -45,5 +45,16 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".hover-preset-1": {
+          transition: "all 0.3s ease-in-out",
+          "&:hover": {
+            backgroundColor: "#549DA4",
+          },
+        },
+      });
+    },
+  ],
 };

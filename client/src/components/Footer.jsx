@@ -48,7 +48,9 @@ const Footer = () => {
                 placeholder="Enter your email"
                 aria-label="Email"
               />
-              <button className="p-3 text-xs bg-primary-500">Subscribe</button>
+              <button className="p-3 text-xs bg-primary-500 hover-preset-1">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
