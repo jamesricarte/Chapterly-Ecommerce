@@ -73,10 +73,10 @@ const Nav = () => {
           </div>
           <div className="flex items-center gap-3 text-md text-secondary-500">
             <Link to="/user">
-              <FaUser />
+              <FaUser className="transition duration-200 ease-in-out hover:text-primary-500" />
             </Link>
             <Link to="/cart">
-              <FaShoppingCart />
+              <FaShoppingCart className="transition duration-200 ease-in-out hover:text-primary-500" />
             </Link>
           </div>
         </div>

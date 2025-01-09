@@ -31,7 +31,7 @@ const Home = () => {
             alt="Hero banner"
           />
           <div className="container px-4 mx-auto">
-            <button className="absolute px-11 py-3 text-2xl font-bold text-white bg-primary-500 rounded-xl bottom-[32%] left-[6.5%]">
+            <button className="absolute px-11 py-3 text-2xl font-bold text-white bg-primary-500 rounded-xl bottom-[32%] left-[6.5%] hover-preset-1">
               Shop Now
             </button>
             <div className="absolute flex gap-3 transform -translate-x-1/2 bottom-6 left-1/2">
@@ -67,7 +67,7 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-1 mt-8">
               <div className="relative flex items-center justify-center">
                 <img className="w-full" src={PromotionImage1} />
-                <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%]">
+                <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%] hover-preset-1">
                   Buy now
                 </button>
                 <div className="absolute flex gap-3 transform -translate-x-1/2 bottom-12 left-1/2">
@@ -81,7 +81,7 @@ const Home = () => {
               <div className="grid gap-4 p-4 grid-row-2">
                 <div className="relative flex items-center justify-center">
                   <img className="w-full" src={PromotionImage2} />
-                  <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%]">
+                  <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%] hover-preset-1">
                     Buy now
                   </button>
                 </div>

@@ -50,22 +50,22 @@ export default {
       addUtilities({
         // buttons
         ".hover-preset-1": {
-          transition: "all 0.3s ease-in-out",
+          transition: "all 0.2s ease-in-out",
           "&:hover": {
             backgroundColor: "#549DA4",
           },
         },
         // for order cancellation
         ".hover-preset-2": {
-          transition: "all 0.3s ease-in-out",
+          transition: "all 0.2s ease-in-out",
           "&:hover": {
             backgroundColor: "#006d77",
             color: "#FFFFFF",
           },
         },
-        // for inputs
+        // for links
         ".hover-preset-3": {
-          transition: "all 0.3s ease-in-out",
+          transition: "all 0.2s ease-in-out",
           "&:hover": {
             color: "#83c5be",
           },
