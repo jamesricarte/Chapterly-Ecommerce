@@ -48,17 +48,26 @@ export default {
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
+        // buttons
         ".hover-preset-1": {
           transition: "all 0.3s ease-in-out",
           "&:hover": {
             backgroundColor: "#549DA4",
           },
         },
+        // for order cancellation
         ".hover-preset-2": {
           transition: "all 0.3s ease-in-out",
           "&:hover": {
             backgroundColor: "#006d77",
             color: "#FFFFFF",
+          },
+        },
+        // for inputs
+        ".hover-preset-3": {
+          transition: "all 0.3s ease-in-out",
+          "&:hover": {
+            color: "#83c5be",
           },
         },
       });
