@@ -16,9 +16,7 @@ import ProductImage2 from "../../assets/images/products/subtle-art-journal.png";
 import ProductImage3 from "../../assets/images/products/48laws-power.png";
 import ProductImage4 from "../../assets/images/products/dailystoicsz.png";
 import { HiOutlineChevronRight } from "react-icons/hi";
-import { HiChevronRight } from "react-icons/hi";
-import { HiChevronLeft } from "react-icons/hi";
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -109,8 +107,8 @@ const Home = () => {
                 Recommendations
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
-                <FaChevronCircleLeft className="text-primary-100" />
-                <FaChevronCircleRight />
+                <FaCircleChevronLeft className="text-primary-100" />
+                <FaCircleChevronRight />
               </div>
             </div>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -150,8 +148,8 @@ const Home = () => {
                 Trending Books
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
-                <FaChevronCircleLeft className="text-primary-100" />
-                <FaChevronCircleRight />
+                <FaCircleChevronLeft className="text-primary-100" />
+                <FaCircleChevronRight />
               </div>
             </div>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -191,8 +189,8 @@ const Home = () => {
                 Exclusive Editions
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
-                <FaChevronCircleLeft className="text-primary-100" />
-                <FaChevronCircleRight />
+                <FaCircleChevronLeft className="text-primary-100" />
+                <FaCircleChevronRight />
               </div>
             </div>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

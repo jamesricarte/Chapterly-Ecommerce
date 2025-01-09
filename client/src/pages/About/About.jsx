@@ -1,6 +1,6 @@
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
-import { FaChevronCircleRight } from "react-icons/fa";
+import { FaCircleChevronRight } from "react-icons/fa6";
 
 const HomePage = () => {
   return (
@@ -76,7 +76,7 @@ const HomePage = () => {
                     </button>
                   </li>
                 ))}
-                <FaChevronCircleRight className="text-2xl text-primary-500" />
+                <FaCircleChevronRight className="text-2xl text-primary-500" />
               </ul>
             </nav>
           </div>

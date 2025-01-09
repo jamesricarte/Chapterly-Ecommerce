@@ -6,11 +6,8 @@ import EgoEnemy from "../../assets/images/books/ego_is_the_enemy.png";
 import SubtleArtJournal from "../../assets/images/books/the_subtle_journal.png";
 import LawsOfPower from "../../assets/images/books/48laws_canva.png";
 import DailyStoic from "../../assets/images/books/daily_stoic.png";
-import {
-  FaChevronCircleLeft,
-  FaChevronCircleRight,
-  FaRegHeart,
-} from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
+import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import { FiShare2 } from "react-icons/fi";
 import Card from "../../components/Card";
 import { Link } from "react-router-dom";
@@ -80,8 +77,8 @@ const Product = () => {
               Books Related
             </h1>
             <div className="flex items-center gap-3 text-xl text-primary-500">
-              <FaChevronCircleLeft className="text-primary-100" />
-              <FaChevronCircleRight />
+              <FaCircleChevronLeft className="text-primary-100" />
+              <FaCircleChevronRight />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -121,8 +118,8 @@ const Product = () => {
               Books You Might Like
             </h1>
             <div className="flex items-center gap-3 text-xl text-primary-500">
-              <FaChevronCircleLeft className="text-primary-100" />
-              <FaChevronCircleRight />
+              <FaCircleChevronLeft className="text-primary-100" />
+              <FaCircleChevronRight />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
