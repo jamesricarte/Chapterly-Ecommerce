@@ -6,47 +6,81 @@ const Blog = () => {
     <div>
       <Nav />
 
-      <div className="flex flex-col items-center justify-center py-10 bg-secondary-50">
-        <h1 className="text-3xl font-bold text-primary-500 font-Poppins">
-          Join us on this Journey
-        </h1>
-        <p className="w-2/3 mt-4 mb-3 leading-relaxed text-center text-primary-500 font-Poppins">
-          Chapterly began as a small passion project by book enthusiasts and has grown into a platform where readers connect, share their love for literature, and discover diverse stories. Combining the convenience of an online bookstore with the warmth of a reader-driven community, everything we do stems from our deep love for storytelling and our commitment to making books accessible to everyone.
-        </p>
-      </div>
+      <section className="flex justify-center py-16">
+        <div
+          className="w-4/5 p-8 bg-gradient-to-r from-[#007E71] to-[#83C5BE] rounded-tl-md rounded-tr-md rounded-bl-md"
+          style={{ borderBottomRightRadius: "180px" }}
+        >
+          <h1 className="text-xl pt-6 font-semibold text-white">
+            Welcome to Chapterly: Redefining the Joy of Reading
+          </h1>
+          <p className="mt-4 text-white">
+            A refreshingly raw and honest guide to living a meaningful life by
+            focusing only on what truly matters. Packed with humor, blunt
+            wisdom, and no-nonsense advice, this book challenges the obsession
+            with positivity and teaches you the liberating power of embracing
+            struggles and failures. It&apos;s about prioritizing your values,
+            ditching superficial expectations, and living authentically in a
+            chaotic world.
+          </p>
+        </div>
+      </section>
 
-      <main className="relative w-full">
-        <div className="h-80 bg-white"></div> {/* Change height to h-80 */}
-        <div className="h-80 bg-secondary-400"></div> {/* Change height to h-80 */}
+      {/* Latest Blogs Section */}
+      <section className="py-16 px-8">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-3xl font-bold text-primary-500">
+              Latest Blogs
+            </h2>
+            <button className="px-4 py-2 text-sm font-semibold text-white bg-primary-500 rounded-lg">
+              Sort by Date
+            </button>
+          </div>
 
-        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 w-11/12 md:w-4/5 lg:w-5/6 bg-white shadow-lg">
-          <div className="grid grid-cols-2">
-            <div className="p-4 border bg-white">
-              {/* Photo */}
-              <div className="h-full bg-gray-300"></div>
-            </div>
+          {/* Blog Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Blog Card */}
+            {[...Array(6)].map((_, index) => (
+              <div
+                key={index}
+                className="p-4 bg-white border rounded-lg shadow-md"
+              >
+                <img
+                  src={`/images/blog-${index + 1}.jpg`}
+                  alt={`Blog ${index + 1}`}
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+                <h3 className="mt-4 text-lg font-semibold text-primary-500">
+                  Blog Title {index + 1}
+                </h3>
+                <p className="mt-2 text-sm text-secondary-500">Explain</p>
+              </div>
+            ))}
+          </div>
 
-            <div className="p-12 border bg-secondary-400">
-              <h2 className="text-2xl pb-4 text-white font-semibold">Our Story</h2>
-              <p className="leading-relaxed text-sm text-white">
-                Chapterly began as a small passion project by book enthusiasts and has grown into a platform where readers connect, share their love for literature, and discover diverse stories. Combining the convenience of an online bookstore with the warmth of a reader-driven community, everything we do stems from our deep love for storytelling and our commitment to making books accessible to everyone.
-              </p>
-            </div>
-
-            <div className="p-12 border bg-secondary-400">
-              <h2 className="text-2xl pb-4 text-white font-semibold">Our Why</h2>
-              <p className="leading-relaxed text-sm text-white">
-                At Chapterly, we believe stories have the power to transform lives—whether it&apos;s the joy of discovering a new book, the inspiration from a compelling narrative, or the comfort of revisiting a beloved classic. Our mission is to make the magic of books accessible to everyone by creating a space where readers of all ages and backgrounds can connect with stories that resonate.
-              </p>
-            </div>
-
-            <div className="p-4 border bg-white">
-              {/* Photo */}
-              <div className="h-full bg-gray-300"></div>
-            </div>
+          {/* Pagination */}
+          <div className="flex justify-center mt-8">
+            <nav>
+              <ul className="flex space-x-4">
+                {[1, 2, 3, 4, 5].map((page) => (
+                  <li key={page}>
+                    <button
+                      className={`px-4 py-2 rounded-lg ${
+                        page === 1
+                          ? "bg-primary-500 text-white"
+                          : "bg-gray-100 text-primary-500"
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
-      </main>
+      </section>
 
       <Footer />
     </div>
