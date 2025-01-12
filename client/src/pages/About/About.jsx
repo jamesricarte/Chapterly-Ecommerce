@@ -21,13 +21,11 @@ const About = () => {
       </div>
 
       <main className="relative w-full">
-        <div className="bg-white h-80"></div> {/* Change height to h-80 */}
-        <div className="h-80 bg-secondary-400"></div>{" "}
-        {/* Change height to h-80 */}
+        <div className="bg-white h-80"></div>
+        <div className="h-80 bg-secondary-400"></div>
         <div className="absolute w-11/12 transform -translate-x-1/2 bg-white shadow-lg top-10 left-1/2 md:w-4/5 lg:w-5/6">
           <div className="grid grid-cols-2">
             <div className="p-4 bg-white border">
-              {/* Photo */}
               <div className="h-full bg-gray-300"></div>
             </div>
 
@@ -62,7 +60,6 @@ const About = () => {
             </div>
 
             <div className="p-4 bg-white border">
-              {/* Photo */}
               <div className="h-full bg-gray-300"></div>
             </div>
           </div>
