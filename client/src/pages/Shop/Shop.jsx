@@ -1,15 +1,9 @@
 import React from "react";
 import Nav from "../../components/Nav";
 import Card from "../../components/Card";
-import {
-  FaAngleDown,
-  FaChevronCircleRight,
-  FaRegStar,
-  FaStar,
-  FaStarHalfAlt,
-} from "react-icons/fa";
+import { FaAngleDown, FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FaCircleChevronRight, FaCircleChevronLeft } from "react-icons/fa6";
 import { FiFilter } from "react-icons/fi";
-import { FaChevronCircleLeft } from "react-icons/fa";
 import SubtleArt from "../../assets/images/books/the_subtle_journal.png";
 import EgoEnemy from "../../assets/images/books/ego_is_the_enemy.png";
 import LawsOfPower from "../../assets/images/books/48laws_canva.png";
@@ -100,11 +94,11 @@ const Shop = () => {
                   placeholder="Max"
                 />
               </div>
-              <button className="w-[200px] text-sm p-2 text-white bg-primary-500 mb-4">
+              <button className="w-[200px] text-sm p-2 text-white bg-primary-500 mb-4 hover-preset-1">
                 Apply
               </button>
               <hr className="w-48 mb-4 border-primary-500" />
-              <button className="w-[200px] text-sm p-2 text-white bg-primary-500">
+              <button className="w-[200px] text-sm p-2 text-white bg-primary-500 hover-preset-1">
                 Clear All
               </button>
             </div>
@@ -116,8 +110,8 @@ const Shop = () => {
                   Best Selling
                 </h1>
                 <div className="flex items-center gap-3 text-xl text-primary-500">
-                  <FaChevronCircleLeft className="text-primary-100" />
-                  <FaChevronCircleRight />
+                  <FaCircleChevronLeft className="text-primary-100" />
+                  <FaCircleChevronRight />
                 </div>
               </div>
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -157,8 +151,8 @@ const Shop = () => {
                   40% Sale
                 </h1>
                 <div className="flex items-center gap-3 text-xl text-primary-500">
-                  <FaChevronCircleLeft className="text-primary-100" />
-                  <FaChevronCircleRight />
+                  <FaCircleChevronLeft className="text-primary-100" />
+                  <FaCircleChevronRight />
                 </div>
               </div>
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -198,8 +192,8 @@ const Shop = () => {
                   Pre Orders
                 </h1>
                 <div className="flex items-center gap-3 text-xl text-primary-500">
-                  <FaChevronCircleLeft className="text-primary-100" />
-                  <FaChevronCircleRight />
+                  <FaCircleChevronLeft className="text-primary-100" />
+                  <FaCircleChevronRight />
                 </div>
               </div>
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -233,10 +227,44 @@ const Shop = () => {
                 />
               </div>
             </div>
-            <div>{/* PAGINATION HERE  */}</div>
+            <div className="flex justify-center mb-10">
+              <nav>
+                <ul className="flex items-center space-x-4">
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 bg-primary-100 text-primary-500">
+                      1
+                    </button>
+                  </li>
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 text-primary-500">
+                      2
+                    </button>
+                  </li>
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 text-primary-500">
+                      3
+                    </button>
+                  </li>
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 text-primary-500">
+                      4
+                    </button>
+                  </li>
+                  <li className="text-md">
+                    <button className="flex items-center justify-center rounded-full w-7 h-7 text-primary-500">
+                      5
+                    </button>
+                  </li>
+                  <li className="text-2xl text-primary-500">
+                    <FaCircleChevronRight />
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </main>
+
       <Footer />
     </div>
   );
