@@ -9,9 +9,12 @@ import {
   FaUser,
   FaShoppingCart,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Nav = () => {
+  const location = useLocation();
+  const isActive = (path) =>
+    location.pathname === path ? "text-secondary-500" : "";
   return (
     <nav className="shadow-md">
       <div className="text-sm text-white bg-secondary-500">
@@ -43,22 +46,22 @@ const Nav = () => {
           <p className="ml-1 text-2xl italic text-primary-500">hapterly</p>
         </div>
         <ul className="flex gap-[19px] text-lg text-primary-500 cursor-pointer">
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/")}`}>
             <Link to="/">Home</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/shop")}`}>
             <Link to="/shop">Shop</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/about")}`}>
             <Link to="/about">About</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/contact")}`}>
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/deals")}`}>
             <Link to="/deals">Deals</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/community")}`}>
             <Link to="/community">Community</Link>
           </li>
         </ul>
