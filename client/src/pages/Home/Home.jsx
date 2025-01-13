@@ -20,6 +20,7 @@ import ProductImage3 from "../../assets/images/products/48laws-power.png";
 import ProductImage4 from "../../assets/images/products/dailystoicsz.png";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -55,9 +56,12 @@ const Home = () => {
                   src={HeroBannerImage}
                   alt="Slide 1"
                 />
-                <button className="absolute px-11 py-3 text-2xl font-bold text-white bg-primary-500 rounded-xl bottom-[32%] left-[6.5%] hover-preset-1">
+                <Link
+                  to="/shop"
+                  className="absolute px-11 py-3 text-2xl text-center font-bold text-white bg-primary-500 rounded-xl bottom-[32%] left-[6.5%] hover-preset-1"
+                >
                   Shop Now
-                </button>
+                </Link>
               </div>
               {/* Slide 2 */}
               <div className="relative flex-shrink-0 w-full h-full">
@@ -66,9 +70,12 @@ const Home = () => {
                   src={YearEndBanner}
                   alt="Slide 2"
                 />
-                <button className="absolute p-7 text-3xl font-bold text-white bg-[#3ccabc] w-[390px]  rounded-full bottom-[26.5%] left-[57%] transition-all duration-300 ease-in-out transform  hover:opacity-80">
+                <Link
+                  to="/shop"
+                  className="absolute p-7 text-3xl font-bold text-center text-white bg-[#3ccabc] w-[390px] rounded-full bottom-[26%] left-[54%] transition-all duration-300 ease-in-out transform  hover:opacity-80"
+                >
                   Shop Now
-                </button>
+                </Link>
               </div>
               {/* Slide 3 */}
               <div className="relative flex-shrink-0 w-full h-full">
@@ -77,9 +84,12 @@ const Home = () => {
                   src={TopBooksBanner}
                   alt="Slide 3"
                 />
-                <button className="absolute p-7 text-3xl font-bold text-[#26625B] bg-[#00a59a] w-[440px] rounded-xl bottom-[29.5%] left-[61.3%] transition-all duration-300 ease-in-out transform  hover:opacity-90">
+                <Link
+                  to="/deals"
+                  className="absolute p-7 text-3xl text-center font-bold text-[#26625B] bg-[#00a59a] w-[440px] rounded-xl bottom-[29.5%] left-[61.3%] transition-all duration-300 ease-in-out transform  hover:opacity-90"
+                >
                   READ MORE
-                </button>
+                </Link>
               </div>
               {/* Slide 4 */}
               <div className="relative flex-shrink-0 w-full h-full">
@@ -97,7 +107,7 @@ const Home = () => {
               <div
                 key={index}
                 onClick={() => setActiveSlide(index)} // Click to change slide
-                className={`w-6 h-6 rounded-full border border-white cursor-pointer ${
+                className={`w-6 h-6 rounded-full  cursor-pointer ${
                   activeSlide === index ? "bg-primary-500" : "bg-secondary-200"
                 }`}
               ></div>
@@ -129,11 +139,14 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-1 mt-8">
               <div className="relative flex items-center justify-center">
                 <img className="w-full" src={PromotionImage1} />
-                <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%] hover-preset-1">
+                <Link
+                  to="/shop"
+                  className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%] hover-preset-1"
+                >
                   Buy now
-                </button>
+                </Link>
                 <div className="absolute flex gap-3 px-5 py-3 transform -translate-x-1/2 bg-white rounded-full bottom-12 left-1/2">
-                  <div className="w-5 h-5 border border-black rounded-full bg-primary-500"></div>
+                  <div className="w-5 h-5 rounded-full bg-primary-500"></div>
                   <div className="w-5 h-5 rounded-full bg-secondary-200"></div>
                   <div className="w-5 h-5 rounded-full bg-secondary-200"></div>
                   <div className="w-5 h-5 rounded-full bg-secondary-200"></div>
@@ -143,9 +156,12 @@ const Home = () => {
               <div className="grid gap-4 p-4 grid-row-2">
                 <div className="relative flex items-center justify-center">
                   <img className="w-full" src={PromotionImage2} />
-                  <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%] hover-preset-1">
+                  <Link
+                    to="/shop"
+                    className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%] hover-preset-1"
+                  >
                     Buy now
-                  </button>
+                  </Link>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center justify-center">
