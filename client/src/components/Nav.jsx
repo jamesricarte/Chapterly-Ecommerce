@@ -41,10 +41,10 @@ const Nav = () => {
       </div>
 
       <div className="container flex items-center justify-between p-4 mx-auto ">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img className="w-10" src={Logo} alt="Chapterlys Logo" />
           <p className="ml-1 text-2xl italic text-primary-500">hapterly</p>
-        </div>
+        </Link>
         <ul className="flex gap-[19px] text-lg ml-48 text-primary-500 cursor-pointer">
           <li className={`hover:text-secondary-500 ${isActive("/")}`}>
             <Link to="/">Home</Link>
