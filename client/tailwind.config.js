@@ -86,6 +86,13 @@ export default {
             color: "#549da4",
           },
         },
+        // for banners
+        ".hover-preset-6": {
+          transition: "all 0.3s ease-in-out",
+          "&:hover": {
+            opacity: "0.8",
+          },
+        },
       });
     },
   ],

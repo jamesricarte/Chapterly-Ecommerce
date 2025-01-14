@@ -76,7 +76,7 @@ const Home = () => {
             </h3>
             <div className="grid grid-cols-2 gap-1 mt-8">
               <div className="relative flex items-center justify-center">
-                <img className="w-full" src={PromotionImage1} />
+                <img className="w-full hover-preset-6" src={PromotionImage1} />
                 <Link
                   to="/shop"
                   className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%] hover-preset-1"
@@ -93,7 +93,10 @@ const Home = () => {
 
               <div className="grid gap-4 p-4 grid-row-2">
                 <div className="relative flex items-center justify-center">
-                  <img className="w-full" src={PromotionImage2} />
+                  <img
+                    className="w-full hover-preset-6"
+                    src={PromotionImage2}
+                  />
                   <Link
                     to="/shop"
                     className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%] hover-preset-1"
@@ -103,7 +106,10 @@ const Home = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center justify-center">
-                    <img className="w-full" src={PromotionImage3} />
+                    <img
+                      className="w-full hover-preset-6 "
+                      src={PromotionImage3}
+                    />
                   </div>
                   <div className="flex flex-col items-center justify-center w-full h-full rounded-md bg-primary-500">
                     <p className="text-xl text-white">Christmas Sale</p>
