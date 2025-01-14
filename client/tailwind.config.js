@@ -70,6 +70,14 @@ export default {
             color: "#83c5be",
           },
         },
+        // for cards
+        ".hover-preset-4": {
+          transition: "transform 0.3s ease-in-out, cursor 0.3s ease-in-out",
+          cursor: "pointer",
+          "&:hover": {
+            transform: "scale(1.055)",
+          },
+        },
       });
     },
   ],

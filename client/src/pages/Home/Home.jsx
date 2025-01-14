@@ -35,11 +35,36 @@ const Home = () => {
             </h2>
             <div className="relative flex mt-9">
               <div className="flex flex-wrap space-x-4 justify-evenly">
-                <img className="object-cover w-72" src={BookGenresImage1} />
-                <img className="object-cover w-72" src={BookGenresImage2} />
-                <img className="object-cover w-72" src={BookGenresImage3} />
-                <img className="object-cover w-72" src={BookGenresImage4} />
-                <img className="object-cover w-72" src={BookGenresImage5} />
+                <Link to="/shop">
+                  <img
+                    className="object-cover w-72 hover-preset-4 "
+                    src={BookGenresImage1}
+                  />
+                </Link>
+                <Link to="/shop">
+                  <img
+                    className="object-cover hover-preset-4 w-72 "
+                    src={BookGenresImage2}
+                  />
+                </Link>
+                <Link to="/shop">
+                  <img
+                    className="object-cover hover-preset-4 w-72"
+                    src={BookGenresImage3}
+                  />
+                </Link>
+                <Link to="/shop">
+                  <img
+                    className="object-cover hover-preset-4 w-72"
+                    src={BookGenresImage4}
+                  />
+                </Link>
+                <Link to="/shop">
+                  <img
+                    className="object-cover w-72 hover-preset-4"
+                    src={BookGenresImage5}
+                  />
+                </Link>
               </div>
               <div className="absolute p-3 transform -translate-y-1/2 bg-white rounded-full cursor-pointer -right-5 top-1/2">
                 <HiOutlineChevronRight color="#006D77" size="30" />
