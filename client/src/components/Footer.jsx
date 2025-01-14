@@ -43,7 +43,7 @@ const Footer = () => {
             <p>Enter your email to keep updated in our promotions!</p>
             <div className="flex mt-5">
               <input
-                className="w-full px-4 text-xs text-gray-500 focus:ring-2 focus:ring-primary-500 focus:outline-none"
+                className="w-full px-4 text-xs text-gray-500 focus:ring-1 focus:ring-primary-500 focus:outline-none"
                 type="text"
                 placeholder="Enter your email"
                 aria-label="Email"
