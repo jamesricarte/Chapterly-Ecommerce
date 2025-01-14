@@ -132,17 +132,25 @@ const UserPage = () => {
             <UserProfile />
             <div className="mt-6 text-primary-500">
               <ul className="space-y-2 font-semibold">
-                <li className="hover-preset-3">
-                  <a href="#">Account Settings</a>
+                <li>
+                  <a href="#" className="hover-preset-3">
+                    Account Settings
+                  </a>
                 </li>
-                <li className="hover-preset-3">
-                  <a href="#">My Purchase</a>
+                <li>
+                  <a href="#" className="hover-preset-3">
+                    My Purchase
+                  </a>
                 </li>
-                <li className="hover-preset-3">
-                  <a href="#">My Vouchers</a>
+                <li>
+                  <a href="#" className="hover-preset-3">
+                    My Vouchers
+                  </a>
                 </li>
-                <li className="hover-preset-3">
-                  <a href="#">Notifications</a>
+                <li>
+                  <a href="#" className="hover-preset-3">
+                    Notifications
+                  </a>
                 </li>
               </ul>
             </div>

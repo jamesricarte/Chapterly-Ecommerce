@@ -34,7 +34,7 @@ const Card = ({
               </div>
             </div>
             <FaShoppingCart
-              className={`text-lg text-primary-500 ${cartDisplay} hover-preset-3`}
+              className={`text-lg text-primary-500 ${cartDisplay} hover-preset-5`}
             />
           </div>
         </div>

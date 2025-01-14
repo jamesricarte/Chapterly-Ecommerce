@@ -67,10 +67,10 @@ const Contact = () => {
               </p>
               <h3 className="mb-2 text-xl font-medium">Follow us on</h3>
               <div className="flex gap-6 text-3xl">
-                <FaTiktok />
-                <FaFacebook />
-                <FaInstagram />
-                <FaXTwitter />
+                <FaTiktok className="hover-preset-5" />
+                <FaFacebook className="hover-preset-5" />
+                <FaInstagram className="hover-preset-5" />
+                <FaXTwitter className="hover-preset-5" />
               </div>
             </div>
             <div className="mt-3">
