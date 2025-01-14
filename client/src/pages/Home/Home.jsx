@@ -111,7 +111,7 @@ const Home = () => {
                       src={PromotionImage3}
                     />
                   </div>
-                  <div className="flex flex-col items-center justify-center w-full h-full rounded-md bg-primary-500">
+                  <div className="flex flex-col items-center justify-center w-full h-full rounded-md bg-primary-500 hover-preset-6">
                     <p className="text-xl text-white">Christmas Sale</p>
                     <h3 className="text-2xl font-bold text-white">
                       20% Discount
