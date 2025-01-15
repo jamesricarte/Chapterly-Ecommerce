@@ -23,69 +23,69 @@ const Shop = () => {
           <div className=" text-primary-500">
             <div className="flex items-center gap-3 mb-4">
               <FiFilter className="text-3xl" />
-              <h2 className="text-3xl font-semibold">Search Filter</h2>
+              <h2 className="text-2xl font-semibold">Search Filter</h2>
             </div>
-            <h3 className="mb-4 text-2xl">By Book Genre</h3>
+            <h3 className="mb-4 text-xl">By Book Genre</h3>
             <div className="mb-4 ">
-              <label className="flex mb-2 text-xl font-light ">
+              <label className="flex mb-2 text-lg font-light ">
                 <input type="checkbox" className="mr-2" />
                 Romance
               </label>
-              <label className="flex mb-2 text-xl font-light">
+              <label className="flex mb-2 text-lg font-light">
                 <input type="checkbox" className="mr-2" />
                 Fiction
               </label>
-              <label className="flex mb-2 text-xl font-light">
+              <label className="flex mb-2 text-lg font-light">
                 <input type="checkbox" className="mr-2" />
                 Mystery
               </label>
-              <p className="flex items-center gap-2 mt-4 mb-4 text-xl font-light">
+              <p className="flex items-center gap-2 mt-4 mb-4 text-lg font-light">
                 More
                 <FaAngleDown />
               </p>
               <hr className="w-48 border-primary-500" />
             </div>
-            <h3 className="mb-4 text-2xl ">Ratings</h3>
+            <h3 className="mb-4 text-xl ">Ratings</h3>
             <div className="mb-4">
-              <div className="flex gap-3 mb-3 text-xl text-primary-300">
+              <div className="flex gap-3 mb-3 text-lg text-primary-300">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
               </div>
-              <div className="flex gap-3 mb-2 text-xl text-primary-300">
+              <div className="flex gap-3 mb-2 text-lg text-primary-300">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaRegStar />
-                <p className="text-sm font-light">& Up</p>
+                <p className="text-base font-light">& Up</p>
               </div>
-              <div className="flex gap-3 mb-2 text-xl text-primary-300">
+              <div className="flex gap-3 mb-2 text-lg text-primary-300">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStarHalfAlt />
                 <FaRegStar />
-                <p className="text-sm font-light">& Up</p>
+                <p className="text-base font-light">& Up</p>
               </div>
-              <p className="flex items-center gap-2 mt-4 mb-4 text-xl font-light">
+              <p className="flex items-center gap-2 mt-4 mb-4 text-lg font-light">
                 More
                 <FaAngleDown />
               </p>
               <hr className="w-48 mb-4 border-primary-500" />
-              <h3 className="mb-2 text-2xl">Price Range</h3>
+              <h3 className="mb-2 text-xl">Price Range</h3>
               <div className="flex items-center mb-4">
                 <input
-                  className="w-1/2 p-2 mr-2 border"
+                  className="w-1/2 p-1 mr-2 border"
                   type="number"
                   min="0"
                   max="100"
                   placeholder="Min"
                 />
                 <input
-                  className="w-1/2 p-2 mr-2 border "
+                  className="w-1/2 p-1 mr-2 border "
                   type="number"
                   min="0"
                   max="100"
@@ -101,10 +101,10 @@ const Shop = () => {
               </button>
             </div>
           </div>
-          <div className="mt-14">
+          <div className="mt-12">
             <div className="mb-12">
               <div className="flex items-center justify-between mb-6">
-                <h1 className="text-4xl font-bold text-primary-500">
+                <h1 className="text-3xl font-bold text-primary-500">
                   Best Selling
                 </h1>
                 <div className="flex items-center gap-3 text-xl text-primary-500">
@@ -145,7 +145,7 @@ const Shop = () => {
             </div>
             <div className="mb-12">
               <div className="flex items-center justify-between mb-6">
-                <h1 className="text-4xl font-bold text-primary-500">
+                <h1 className="text-3xl font-bold text-primary-500">
                   40% Sale
                 </h1>
                 <div className="flex items-center gap-3 text-xl text-primary-500">
@@ -186,7 +186,7 @@ const Shop = () => {
             </div>
             <div className="mb-14">
               <div className="flex items-center justify-between mb-6">
-                <h1 className="text-4xl font-bold text-primary-500">
+                <h1 className="text-3xl font-bold text-primary-500">
                   Pre Orders
                 </h1>
                 <div className="flex items-center gap-3 text-xl text-primary-500">

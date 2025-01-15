@@ -126,7 +126,7 @@ const Home = () => {
         <section className="container px-4 mx-auto">
           <div className="mb-12">
             <div className="flex items-center justify-between mb-6">
-              <h1 className="text-2xl font-bold text-primary-500">
+              <h1 className="text-3xl font-bold text-primary-500">
                 Recommendations
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
@@ -167,7 +167,7 @@ const Home = () => {
           </div>
           <div className="mb-12">
             <div className="flex items-center justify-between mb-6">
-              <h1 className="text-2xl font-bold text-primary-500">
+              <h1 className="text-3xl font-bold text-primary-500">
                 Trending Books
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
@@ -208,7 +208,7 @@ const Home = () => {
           </div>
           <div className="mb-14">
             <div className="flex items-center justify-between mb-6">
-              <h1 className="text-2xl font-bold text-primary-500">
+              <h1 className="text-3xl font-bold text-primary-500">
                 Exclusive Editions
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
