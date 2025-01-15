@@ -47,13 +47,17 @@ function HelpPage() {
       return (
         <div
           key={index}
-          className="flex flex-col items-center p-8 text-center transition-shadow duration-300 bg-gray-200 rounded-lg hover:shadow-lg"
+          className="flex flex-col items-center p-8 text-center transition duration-300 ease-in-out transform bg-gray-200 rounded-lg cursor-pointer group hover:bg-secondary-500 "
         >
-          <div className="mb-4 text-4xl text-teal-600">{category.icon}</div>
-          <h3 className="mb-2 text-xl font-semibold text-gray-900">
+          <div className="mb-4 text-5xl text-primary-700 group-hover:text-white">
+            {category.icon}
+          </div>
+          <h3 className="mb-2 text-xl font-semibold text-gray-900 group-hover:text-white">
             {category.title}
           </h3>
-          <p className="text-gray-500">{category.description}</p>
+          <p className="text-gray-500 group-hover:text-white">
+            {category.description}
+          </p>
         </div>
       );
     });
@@ -63,7 +67,7 @@ function HelpPage() {
     <>
       <Nav />
 
-      <main className="flex flex-col items-center w-screen min-h-screen py-16 overflow-x-hidden bg-white">
+      <main className="flex flex-col items-center py-16 overflow-x-hidden bg-white">
         <div className="w-full px-4 mb-16 text-center max-w-7xl">
           <h1 className="mb-4 text-4xl font-bold text-emerald-900">
             Get the Help You Need
