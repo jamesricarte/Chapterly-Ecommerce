@@ -25,7 +25,9 @@ const Card = ({
                 <p className="font-light">{price},</p>
                 <p className="">{genre}</p>
               </div>
-              <div className={`${ratingDisplay} gap-2 text-primary-300`}>
+              <div
+                className={`${ratingDisplay} gap-2 text-primary-300 text-lg`}
+              >
                 <FaStar />
                 <FaStar />
                 <FaStar />
