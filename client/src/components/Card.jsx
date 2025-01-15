@@ -1,5 +1,6 @@
 import React from "react";
-import { FaShoppingCart, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Card = ({
@@ -35,9 +36,11 @@ const Card = ({
                 <FaStar />
               </div>
             </div>
-            <FaShoppingCart
-              className={`text-lg text-primary-500 ${cartDisplay} hover-preset-5`}
-            />
+            <div className="p-2 bg-primary-500 hover-preset-1">
+              <MdOutlineShoppingCart
+                className={`text-lg text-white ${cartDisplay} `}
+              />
+            </div>
           </div>
         </div>
       </div>
