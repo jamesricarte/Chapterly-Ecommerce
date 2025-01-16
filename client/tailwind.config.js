@@ -70,6 +70,29 @@ export default {
             color: "#83c5be",
           },
         },
+        // for cards
+        ".hover-preset-4": {
+          transition: "transform 0.2s ease-in-out, cursor 0.3s ease-in-out",
+          cursor: "pointer",
+          "&:hover": {
+            transform: "scale(1.055)",
+          },
+        },
+        // for icons
+        ".hover-preset-5": {
+          transition: "all 0.2s ease-in-out",
+          cursor: "pointer",
+          "&:hover": {
+            color: "#549da4",
+          },
+        },
+        // for banners
+        ".hover-preset-6": {
+          transition: "all 0.3s ease-in-out",
+          "&:hover": {
+            opacity: "0.8",
+          },
+        },
       });
     },
   ],

@@ -26,7 +26,7 @@ const Cart = () => {
           <div className="flex flex-col flex-grow ">
             <div className="flex items-center w-full gap-4 bg-white shadow-md pl-9 py-7">
               <div className="w-8 h-8 border-[3px] border-primary-500"></div>
-              <h3 className="text-xl font-semibold text-primary-500">
+              <h3 className="text-2xl font-semibold text-primary-500">
                 ALL ITEMS (2)
               </h3>
             </div>
@@ -42,17 +42,17 @@ const Cart = () => {
                 <div className="flex flex-col justify-between w-full">
                   <div>
                     <div className="flex items-center justify-between w-full">
-                      <h2 className="text-lg font-semibold text-black">
+                      <h2 className="text-2xl font-semibold text-black">
                         THE SUBTLE ART OF NOT GIVING A F*CK
                       </h2>
-                      <p className="font-semibold text-[#CECECE] text-sm">
+                      <p className="font-semibold text-[#CECECE] text-base">
                         In stock
                       </p>
                     </div>
-                    <h3 className="font-semibold text-md text-secondary-300">
+                    <h3 className="text-xl font-semibold text-secondary-300">
                       MARK MANSON
                     </h3>
-                    <div className="flex gap-2 mt-3 text-md text-primary-300">
+                    <div className="flex gap-2 mt-3 text-lg text-primary-300">
                       <FaStar />
                       <FaStar />
                       <FaStar />
@@ -61,7 +61,7 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="flex justify-between">
-                    <h4 className="text-lg font-semibold text-primary-500">
+                    <h4 className="text-xl font-semibold text-primary-500">
                       $12.95
                     </h4>
                     <div className="flex items-center gap-3 text-primary-500">
@@ -70,7 +70,7 @@ const Cart = () => {
                         <BsChevronDown />
                       </div>
 
-                      <div className="flex items-center gap-3 text-xl text-primary-500">
+                      <div className="flex items-center gap-3 text-2xl text-primary-500">
                         <IoIosSearch />
                         <HiOutlineHeart />
                         <RiDeleteBinLine />
@@ -91,17 +91,17 @@ const Cart = () => {
                 <div className="flex flex-col justify-between w-full">
                   <div>
                     <div className="flex items-center justify-between w-full">
-                      <h2 className="text-lg font-semibold text-black">
+                      <h2 className="text-2xl font-semibold text-black">
                         THE SUBTLE ART OF NOT GIVING A F*CK
                       </h2>
-                      <p className="font-semibold text-[#CECECE] text-sm">
+                      <p className="font-semibold text-[#CECECE] text-base">
                         In stock
                       </p>
                     </div>
-                    <h3 className="font-semibold text-md text-secondary-300">
+                    <h3 className="text-xl font-semibold text-secondary-300">
                       MARK MANSON
                     </h3>
-                    <div className="flex gap-2 mt-3 text-md text-primary-300">
+                    <div className="flex gap-2 mt-3 text-lg text-primary-300">
                       <FaStar />
                       <FaStar />
                       <FaStar />
@@ -110,7 +110,7 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="flex justify-between">
-                    <h4 className="text-lg font-semibold text-primary-500">
+                    <h4 className="text-xl font-semibold text-primary-500">
                       $12.95
                     </h4>
                     <div className="flex items-center gap-3 text-primary-500">
@@ -119,7 +119,7 @@ const Cart = () => {
                         <BsChevronDown />
                       </div>
 
-                      <div className="flex items-center gap-3 text-xl">
+                      <div className="flex items-center gap-3 text-2xl">
                         <IoIosSearch />
                         <HiOutlineHeart />
                         <RiDeleteBinLine />

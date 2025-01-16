@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../../components/Nav";
-import HeroBannerImage from "../../assets/images/backgrounds/Hero_banner.jpg";
 import BookGenresImage1 from "../../assets/images/backgrounds/book_genre_image_1.png";
 import BookGenresImage2 from "../../assets/images/backgrounds/book_genre_image_2.png";
 import BookGenresImage3 from "../../assets/images/backgrounds/book_genre_image_3.png";
@@ -17,30 +16,16 @@ import ProductImage3 from "../../assets/images/products/48laws-power.png";
 import ProductImage4 from "../../assets/images/products/dailystoicsz.png";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import Slider from "../../components/Slider";
 
 const Home = () => {
   return (
     <>
       <Nav />
-
       <main>
-        <section className="relative">
-          <img
-            className="object-cover w-full"
-            src={HeroBannerImage}
-            alt="Hero banner"
-          />
-          <div className="container px-4 mx-auto">
-            <button className="absolute px-11 py-3 text-2xl font-bold text-white bg-primary-500 rounded-xl bottom-[32%] left-[6.5%] hover-preset-1">
-              Shop Now
-            </button>
-            <div className="absolute flex gap-3 transform -translate-x-1/2 bottom-6 left-1/2">
-              <div className="w-4 h-4 border border-black rounded-full bg-secondary-500"></div>
-              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
-              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
-              <div className="w-4 h-4 bg-white border border-black rounded-full"></div>
-            </div>
-          </div>
+        <section>
+          <Slider />
         </section>
 
         <section className="py-16 mb-16 bg-gradient-2">
@@ -50,11 +35,36 @@ const Home = () => {
             </h2>
             <div className="relative flex mt-9">
               <div className="flex flex-wrap space-x-4 justify-evenly">
-                <img className="object-cover w-72" src={BookGenresImage1} />
-                <img className="object-cover w-72" src={BookGenresImage2} />
-                <img className="object-cover w-72" src={BookGenresImage3} />
-                <img className="object-cover w-72" src={BookGenresImage4} />
-                <img className="object-cover w-72" src={BookGenresImage5} />
+                <Link to="/shop">
+                  <img
+                    className="object-cover w-72 hover-preset-4 "
+                    src={BookGenresImage1}
+                  />
+                </Link>
+                <Link to="/shop">
+                  <img
+                    className="object-cover hover-preset-4 w-72 "
+                    src={BookGenresImage2}
+                  />
+                </Link>
+                <Link to="/shop">
+                  <img
+                    className="object-cover hover-preset-4 w-72"
+                    src={BookGenresImage3}
+                  />
+                </Link>
+                <Link to="/shop">
+                  <img
+                    className="object-cover hover-preset-4 w-72"
+                    src={BookGenresImage4}
+                  />
+                </Link>
+                <Link to="/shop">
+                  <img
+                    className="object-cover w-72 hover-preset-4"
+                    src={BookGenresImage5}
+                  />
+                </Link>
               </div>
               <div className="absolute p-3 transform -translate-y-1/2 bg-white rounded-full cursor-pointer -right-5 top-1/2">
                 <HiOutlineChevronRight color="#006D77" size="30" />
@@ -66,30 +76,42 @@ const Home = () => {
             </h3>
             <div className="grid grid-cols-2 gap-1 mt-8">
               <div className="relative flex items-center justify-center">
-                <img className="w-full" src={PromotionImage1} />
-                <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%] hover-preset-1">
+                <img className="w-full hover-preset-6" src={PromotionImage1} />
+                <Link
+                  to="/shop"
+                  className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[26%] left-[14%] hover-preset-1"
+                >
                   Buy now
-                </button>
-                <div className="absolute flex gap-3 transform -translate-x-1/2 bottom-12 left-1/2">
-                  <div className="w-5 h-5 border border-black rounded-full bg-secondary-500"></div>
-                  <div className="w-5 h-5 bg-white border border-black rounded-full"></div>
-                  <div className="w-5 h-5 bg-white border border-black rounded-full"></div>
-                  <div className="w-5 h-5 bg-white border border-black rounded-full"></div>
+                </Link>
+                <div className="absolute flex gap-3 px-5 py-3 transform -translate-x-1/2 bg-white rounded-full bottom-12 left-1/2">
+                  <div className="w-5 h-5 rounded-full bg-primary-500"></div>
+                  <div className="w-5 h-5 rounded-full bg-secondary-200"></div>
+                  <div className="w-5 h-5 rounded-full bg-secondary-200"></div>
+                  <div className="w-5 h-5 rounded-full bg-secondary-200"></div>
                 </div>
               </div>
 
               <div className="grid gap-4 p-4 grid-row-2">
                 <div className="relative flex items-center justify-center">
-                  <img className="w-full" src={PromotionImage2} />
-                  <button className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%] hover-preset-1">
+                  <img
+                    className="w-full hover-preset-6"
+                    src={PromotionImage2}
+                  />
+                  <Link
+                    to="/shop"
+                    className="absolute px-11 py-3 text-xs font-bold text-white bg-primary-500 rounded-xl bottom-[11%] left-[6.5%] hover-preset-1"
+                  >
                     Buy now
-                  </button>
+                  </Link>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center justify-center">
-                    <img className="w-full" src={PromotionImage3} />
+                    <img
+                      className="w-full hover-preset-6 "
+                      src={PromotionImage3}
+                    />
                   </div>
-                  <div className="flex flex-col items-center justify-center w-full h-full rounded-md bg-primary-500">
+                  <div className="flex flex-col items-center justify-center w-full h-full rounded-md bg-primary-500 hover-preset-6">
                     <p className="text-xl text-white">Christmas Sale</p>
                     <h3 className="text-2xl font-bold text-white">
                       20% Discount
@@ -100,15 +122,16 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <section className="container px-4 mx-auto">
           <div className="mb-12">
             <div className="flex items-center justify-between mb-6">
-              <h1 className="text-2xl font-bold text-primary-500">
+              <h1 className="text-3xl font-bold text-primary-500">
                 Recommendations
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
                 <FaCircleChevronLeft className="text-primary-100" />
-                <FaCircleChevronRight />
+                <FaCircleChevronRight className="hover-preset-5" />
               </div>
             </div>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -144,12 +167,12 @@ const Home = () => {
           </div>
           <div className="mb-12">
             <div className="flex items-center justify-between mb-6">
-              <h1 className="text-2xl font-bold text-primary-500">
+              <h1 className="text-3xl font-bold text-primary-500">
                 Trending Books
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
                 <FaCircleChevronLeft className="text-primary-100" />
-                <FaCircleChevronRight />
+                <FaCircleChevronRight className="hover-preset-5" />
               </div>
             </div>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -185,12 +208,12 @@ const Home = () => {
           </div>
           <div className="mb-14">
             <div className="flex items-center justify-between mb-6">
-              <h1 className="text-2xl font-bold text-primary-500">
+              <h1 className="text-3xl font-bold text-primary-500">
                 Exclusive Editions
               </h1>
               <div className="flex items-center gap-3 text-xl text-primary-500">
                 <FaCircleChevronLeft className="text-primary-100" />
-                <FaCircleChevronRight />
+                <FaCircleChevronRight className="hover-preset-5" />
               </div>
             </div>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

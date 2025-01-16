@@ -5,21 +5,24 @@ import {
   FaTiktok,
   FaInstagram,
   FaFacebook,
-  FaTwitter,
   FaUser,
   FaShoppingCart,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
+import { Link, useLocation } from "react-router-dom";
 
 const Nav = () => {
+  const location = useLocation();
+  const isActive = (path) =>
+    location.pathname === path ? "text-secondary-500" : "";
   return (
     <nav className="shadow-md">
       <div className="text-sm text-white bg-secondary-500">
         <div className="container flex justify-between p-2 mx-auto">
           <div className="flex gap-1">
-            <p>Help |</p>
-            <p>FAQs |</p>
-            <p>Support</p>
+            <Link to="/help">Help |</Link>
+            <Link to="/help">FAQs |</Link>
+            <Link to="/community">Support</Link>
           </div>
 
           <div>
@@ -32,33 +35,33 @@ const Nav = () => {
             <FaTiktok />
             <FaFacebook />
             <FaInstagram />
-            <FaTwitter />
+            <FaXTwitter />
           </div>
         </div>
       </div>
 
       <div className="container flex items-center justify-between p-4 mx-auto ">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img className="w-10" src={Logo} alt="Chapterlys Logo" />
           <p className="ml-1 text-2xl italic text-primary-500">hapterly</p>
-        </div>
-        <ul className="flex gap-[19px] text-lg text-primary-500 cursor-pointer">
-          <li className="hover:text-secondary-500">
+        </Link>
+        <ul className="flex gap-[19px] text-lg ml-48 text-primary-500 cursor-pointer">
+          <li className={`hover:text-secondary-500 ${isActive("/")}`}>
             <Link to="/">Home</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/shop")}`}>
             <Link to="/shop">Shop</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/about")}`}>
             <Link to="/about">About</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/contact")}`}>
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/deals")}`}>
             <Link to="/deals">Deals</Link>
           </li>
-          <li className="hover:text-secondary-500">
+          <li className={`hover:text-secondary-500 ${isActive("/community")}`}>
             <Link to="/community">Community</Link>
           </li>
         </ul>
