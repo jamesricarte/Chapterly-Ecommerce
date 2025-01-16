@@ -6,13 +6,11 @@ import EgoEnemy from "../../assets/images/books/ego_is_the_enemy.png";
 import SubtleArtJournal from "../../assets/images/books/the_subtle_journal.png";
 import LawsOfPower from "../../assets/images/books/48laws_canva.png";
 import DailyStoic from "../../assets/images/books/daily_stoic.png";
-import {
-  FaChevronCircleLeft,
-  FaChevronCircleRight,
-  FaRegHeart,
-} from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
+import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import { FiShare2 } from "react-icons/fi";
 import Card from "../../components/Card";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   return (
@@ -24,15 +22,17 @@ const Product = () => {
             <img src={SubtleArt} alt="The Subtle Art of Not Giving a F*ck" />
           </div>
           <div>
-            <p className="mb-2 font-semibold text-primary-500">$ 99.99</p>
-            <h1 className="text-2xl font-semibold">
+            <p className="mb-2 text-2xl font-semibold text-primary-500">
+              $ 99.99
+            </p>
+            <h1 className="text-4xl font-semibold">
               THE SUBTLE ART OF NOT GIVING A F*CK
             </h1>
-            <h2 className="mb-4 text-xl font-semibold text-secondary-500">
+            <h2 className="mb-8 text-3xl font-semibold text-secondary-500">
               MARK MANSON
             </h2>
-            <div className="flex items-center gap-2 mb-6">
-              <p className="text-sm font-semibold">Quantity</p>
+            <div className="flex items-center gap-2 mb-8">
+              <p className="text-lg font-semibold">Quantity</p>
               <input
                 className="w-24 p-1 mr-2 placeholder-black border border-black "
                 type="number"
@@ -42,19 +42,21 @@ const Product = () => {
               />
             </div>
             <div className="flex items-center gap-4 mb-10 ">
-              <button className="p-3 rounded text-sm text-white bg-primary-500 w-[350px]">
-                Add To Cart
-              </button>
-              <div className="flex gap-2 text-lg text-primary-500">
+              <Link to="/cart">
+                <button className="p-4 rounded text-sm text-white bg-primary-500 w-[350px] hover-preset-1">
+                  Add To Cart
+                </button>
+              </Link>
+              <div className="flex gap-2 text-xl text-primary-500">
                 <FaRegHeart />
                 <FiShare2 />
               </div>
             </div>
-            <p className="mb-4 text-gray-500 text-md">
+            <p className="mb-4 text-lg text-gray-500">
               Some in-stack items may be delayed.
               <a className="text-black"> Learn more here</a>
             </p>
-            <p className="mb-8 leading-relaxed text-md">
+            <p className="mb-8 text-lg leading-relaxed">
               A refreshingly raw and honest guide to living a meaningful life by
               focusing only on what truly matters. Packed with humor, blunt
               wisdom, and no-nonsense advice, this book challenges the obsession
@@ -65,7 +67,7 @@ const Product = () => {
             </p>
             <a
               href=""
-              className="text-sm font-light text-gray-500 hover:underline"
+              className="font-light text-gray-500 text-md hover:underline"
             >
               FULL DESCRIPTION
             </a>
@@ -73,12 +75,12 @@ const Product = () => {
         </div>
         <div className="mb-12">
           <div className="flex items-center justify-between mb-6">
-            <h1 className="text-2xl font-bold text-primary-500">
+            <h1 className="text-3xl font-bold text-primary-500">
               Books Related
             </h1>
             <div className="flex items-center gap-3 text-xl text-primary-500">
-              <FaChevronCircleLeft className="text-primary-100" />
-              <FaChevronCircleRight />
+              <FaCircleChevronLeft className="text-primary-100" />
+              <FaCircleChevronRight />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -114,12 +116,12 @@ const Product = () => {
         </div>
         <div className="mb-12">
           <div className="flex items-center justify-between mb-6">
-            <h1 className="text-2xl font-bold text-primary-500">
+            <h1 className="text-3xl font-bold text-primary-500">
               Books You Might Like
             </h1>
             <div className="flex items-center gap-3 text-xl text-primary-500">
-              <FaChevronCircleLeft className="text-primary-100" />
-              <FaChevronCircleRight />
+              <FaCircleChevronLeft className="text-primary-100" />
+              <FaCircleChevronRight />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
