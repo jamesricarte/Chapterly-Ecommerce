@@ -9,35 +9,35 @@ import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <>
-      <div className="flex min-h-screen">
+      <main className="flex min-h-screen">
         <div
           className="bg-cover w-[66%] min-h-screen flex flex-col justify-center pl-[7%] rounded-tr-[140px] relative"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           <div className="bg-gradient-1 w-full h-full absolute opacity-75 left-0 top-0 rounded-tr-[140px]"></div>
 
-          <div className="flex items-center mb-24 z-10">
+          <div className="z-10 flex items-center mb-24">
             <img className="w-16" src={Logo} />
-            <h3 className="font-medium text-white text-3xl italic">hapterly</h3>
+            <h3 className="text-3xl italic font-medium text-white">hapterly</h3>
           </div>
-          <div className="text-white flex flex-col gap-3 z-10">
-            <h1 className="font-bold text-6xl">"</h1>
-            <h1 className="font-bold text-6xl">He that loves</h1>
-            <h3 className="font-medium text-4xl">reading has everything</h3>
+          <div className="z-10 flex flex-col gap-3 text-white">
+            <h1 className="text-6xl font-bold">"</h1>
+            <h1 className="text-6xl font-bold">He that loves</h1>
+            <h3 className="text-4xl font-medium">reading has everything</h3>
             <h4 className="text-3xl">within his reach.</h4>
 
-            <p className="text-xl mt-4">__</p>
+            <p className="mt-4 text-xl">__</p>
             <p className="text-2xl italic">William Godwin</p>
           </div>
-          <p className="text-white mt-24 text-xl z-10">
+          <p className="z-10 mt-24 text-xl text-white">
             Get 10% off your next purchase by logging in today!
           </p>
         </div>
 
-        <div className="flex flex-col justify-center items-center  flex-1">
+        <div className="flex flex-col items-center justify-center flex-1">
           <div className="w-[70%]">
             <div className="mb-6">
-              <h3 className="font-bold text-3xl text-primary-500 mb-2">
+              <h3 className="mb-2 text-3xl font-bold text-primary-500">
                 Login
               </h3>
               <p className="text-xs">
@@ -55,7 +55,7 @@ const Login = () => {
                   Email
                 </label>
                 <input
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                   id="email"
                   type="email"
                 />
@@ -68,30 +68,30 @@ const Login = () => {
                   Password
                 </label>
                 <input
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                   id="password"
                   type="password"
                 />
               </div>
-              <div className="flex my-4 justify-between items-center">
+              <div className="flex items-center justify-between my-4">
                 <div>
                   <input type="checkbox" id="remember-me" />
                   <label className="ml-2 text-sm" htmlFor="remember-me">
                     Remember Me
                   </label>
                 </div>
-                <Link to="" className="text-secondary-500 text-sm">
+                <Link to="" className="text-sm text-secondary-500">
                   Forgot password?
                 </Link>
               </div>
-              <button className="bg-primary-500 text-white font-bold p-2 w-full rounded-md">
+              <button className="w-full p-2 font-bold text-white rounded-md bg-primary-500 hover-preset-1">
                 Login
               </button>
             </form>
 
-            <div className="flex items-center mt-9 mb-10">
+            <div className="flex items-center mb-10 mt-9">
               <div className="h-[1px] w-full bg-black"></div>
-              <p className="min-w-28 text-center text-sm">Or login with</p>
+              <p className="text-sm text-center min-w-28">Or login with</p>
               <div className="h-[1px] w-full bg-black"></div>
             </div>
 
@@ -115,7 +115,7 @@ const Login = () => {
             </p>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };

@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
+        Pattaya: ["Pattaya", "serif"],
       },
       colors: {
         primary: {
@@ -39,8 +40,60 @@ export default {
       backgroundImage: {
         "gradient-1":
           "linear-gradient(to right, #006D77 0%, #9CD1CB 80%, #F3F9F9 100%)",
+        "gradient-2":
+          "linear-gradient(to bottom, #006D77 0%, #9CD1CB 40%, #F3F9F9 60%)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        // buttons
+        ".hover-preset-1": {
+          transition: "all 0.2s ease-in-out",
+          "&:hover": {
+            backgroundColor: "#549DA4",
+          },
+        },
+        // for order cancellation
+        ".hover-preset-2": {
+          transition: "all 0.2s ease-in-out",
+          "&:hover": {
+            backgroundColor: "#006d77",
+            color: "#FFFFFF",
+          },
+        },
+        // for links
+        ".hover-preset-3": {
+          transition: "all 0.2s ease-in-out",
+          "&:hover": {
+            color: "#83c5be",
+          },
+        },
+        // for cards
+        ".hover-preset-4": {
+          transition: "transform 0.2s ease-in-out, cursor 0.3s ease-in-out",
+          cursor: "pointer",
+          "&:hover": {
+            transform: "scale(1.055)",
+          },
+        },
+        // for icons
+        ".hover-preset-5": {
+          transition: "all 0.2s ease-in-out",
+          cursor: "pointer",
+          "&:hover": {
+            color: "#549da4",
+          },
+        },
+        // for banners
+        ".hover-preset-6": {
+          transition: "all 0.3s ease-in-out",
+          "&:hover": {
+            opacity: "0.8",
+          },
+        },
+      });
+    },
+  ],
 };
