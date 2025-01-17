@@ -73,8 +73,6 @@ const Nav = () => {
           </li>
         </ul>
 
-        {console.log(isMenuOpen)}
-
         {/* Mobile Nav */}
         <ul
           className={`${
