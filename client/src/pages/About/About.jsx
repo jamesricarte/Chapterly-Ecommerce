@@ -10,8 +10,8 @@ const About = () => {
       <Nav />
 
       <main>
-        <div className="bg-secondary-50">
-          <div className="flex flex-col items-center justify-center py-10">
+        <div className="bg-secondary-50 w-full">
+          <div className="container mx-auto flex flex-col items-center justify-center py-10">
             <h1 className="text-2xl md:text-3xl font-bold text-primary-500 font-Poppins">
               Join us on this Journey
             </h1>
@@ -111,7 +111,30 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white h-auto md:h-1/3"></div>
+          <div className="bg-white h-auto md:h-1/3">
+            <div className="container pt-10 p-16 w-full mx-auto">
+              <div className="flex flex-col items-center justify-center">
+                <h2 className="text-2xl text-primary-500 font-bold">
+                  Our Core Values
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
+                  {[...Array(6)].map((_, index) => (
+                    <div
+                      key={index}
+                      className="p-6 bg-gray-100  rounded-lg shadow-md"
+                    >
+                      <h3 className="text-lg font-semibold text-primary-600">
+                        Core Value {index + 1}
+                      </h3>
+                      <p className="mt-2 text-sm text-primary-600">
+                        Description of core value {index + 1}.
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 
