@@ -1,5 +1,8 @@
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
+import ourStory from "../../assets/images/about/our-story.png";
+import ourWhy from "../../assets/images/about/our-why.png";
+import missionVision from "../../assets/images/about/mission-vision.png";
 
 const About = () => {
   return (
@@ -24,17 +27,21 @@ const About = () => {
           </div>
         </div>
 
-        <div className="relative w-full h-[99rem]">
+        <div className="relative w-full h-[105rem]">
           <div className="bg-white h-1/3"></div>
-          <div className="h-1/3 bg-secondary-400"></div>
+          <div className="h-1/3 bg-secondary-500"></div>
           <div className="bg-white h-1/3"></div>
           <div className="container absolute w-full mx-auto transform -translate-x-1/2 bg-white shadow-lg top-10 left-1/2">
-            <div className="grid grid-cols-2">
-              <div className=" bg-white border">
-                <div className="h-full bg-gray-300"></div>
+            <div className="grid grid-cols-2 gap-0">
+              <div className="bg-white">
+                <img
+                  src={ourStory}
+                  alt="Our Story"
+                  className="object-cover w-full h-auto"
+                />
               </div>
 
-              <div className="p-12 border bg-secondary-300">
+              <div className="p-12 bg-secondary-300">
                 <h2 className="pb-4 text-2xl font-semibold text-white">
                   Our Story
                 </h2>
@@ -49,7 +56,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="p-12 border bg-secondary-300">
+              <div className="p-12 bg-secondary-300">
                 <h2 className="pb-4 text-2xl font-semibold text-white">
                   Our Why
                 </h2>
@@ -64,9 +71,21 @@ const About = () => {
                 </p>
               </div>
 
-              <div className=" bg-white border">
-                <div className="h-full bg-gray-300"></div>
+              <div className="bg-white">
+                <img
+                  src={ourWhy}
+                  alt="Our Why"
+                  className="object-cover w-full h-auto"
+                />
               </div>
+            </div>
+
+            <div className="container absolute w-1/2 mx-auto transform -translate-x-1/2 bg-white shadow-lg p-8 top-[43rem] left-1/4">
+              <img
+                src={missionVision}
+                alt="Mission Vision"
+                className="object-cover w-full h-auto"
+              />
             </div>
           </div>
         </div>

@@ -73,7 +73,6 @@ const Blog = () => {
               ))}
             </div>
 
-            {/* Pagination */}
             <div className="flex justify-center py-16">
               <nav>
                 <ul className="flex items-center space-x-4">
