@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="text-white bg-black ">
-        <div className="container flex flex-col items-center justify-between px-4 py-4 mx-auto text-center sm:flex-row sm:text-left">
+        <div className="container flex flex-col items-center justify-between px-4 py-4 mx-auto text-xs text-center xl:text-base sm:flex-row sm:text-left">
           <p className="mb-2 sm:mb-0">
             © 2025 | Semicolon Inc. | All Rights Reserved.
           </p>

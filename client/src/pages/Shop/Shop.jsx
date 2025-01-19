@@ -20,7 +20,7 @@ const Shop = () => {
           <img src={Banner1} alt="" className="w-full shadow-md" />
         </div>
         <div className="container px-4 py-8 mx-auto">
-          <div className="flex justify-between mt-8">
+          <div className="flex mt-8 gap-28">
             <div className="items-center hidden text-primary-500 xl:block">
               <div className="flex items-center gap-3 mb-4">
                 <FiFilter className="text-3xl" />
@@ -239,7 +239,7 @@ const Shop = () => {
               </div>
               <div className="flex justify-center mb-10">
                 <nav>
-                  <ul className="flex items-center space-x-4 text-xs xl:text-base">
+                  <ul className="flex items-center space-x-3 text-xs xl:text-base">
                     <li>
                       <button className="flex items-center justify-center w-5 h-5 rounded-full xl:w-7 xl:h-7 bg-primary-100 text-primary-500">
                         1
