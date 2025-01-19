@@ -4,10 +4,10 @@ const Footer = () => {
   return (
     <>
       <footer className="py-12 text-white bg-secondary-500">
-        <div className="container grid grid-cols-4 px-4 mx-auto">
+        <div className="container grid grid-cols-1 gap-8 px-4 mx-auto lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 ">
           <div>
             <h1 className="mb-4 text-2xl font-semibold">Need Help?</h1>
-            <ul>
+            <ul className="space-y-1 text-base md:text-lg">
               <li>FAQ</li>
               <li>Help</li>
               <li>Contact Us</li>
@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           <div>
             <h1 className="mb-4 text-2xl font-semibold">My Account</h1>
-            <ul>
+            <ul className="space-y-1 text-base md:text-lg">
               <li>Account</li>
               <li>Register</li>
               <li>View Cart</li>
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           <div>
             <h1 className="mb-4 text-2xl font-semibold">Follow Us</h1>
-            <ul>
+            <ul className="space-y-1 text-base md:text-lg">
               <li>Facebook</li>
               <li>Instagram</li>
               <li>Twitter</li>
@@ -40,15 +40,17 @@ const Footer = () => {
           </div>
           <div>
             <h1 className="mb-4 text-2xl font-semibold">Join Our Newsletter</h1>
-            <p>Enter your email to keep updated in our promotions!</p>
-            <div className="flex mt-5">
+            <p className="text-lg">
+              Enter your email to keep updated in our promotions!
+            </p>
+            <div className="flex flex-col gap-4 mt-5 xl:gap-0 xl:flex-row">
               <input
-                className="w-full px-4 text-xs text-gray-500 focus:ring-1 focus:ring-primary-500 focus:outline-none"
+                className="w-full p-3 text-xs text-gray-500 xl:p-4 xl:flex focus:ring-1 focus:ring-primary-500 focus:outline-none"
                 type="text"
                 placeholder="Enter your email"
                 aria-label="Email"
               />
-              <button className="p-3 text-xs bg-primary-500 hover-preset-1">
+              <button className="px-6 py-3 text-xs w-36 bg-primary-500 hover-preset-1 ">
                 Subscribe
               </button>
             </div>
@@ -56,9 +58,11 @@ const Footer = () => {
         </div>
       </footer>
       <div className="text-white bg-black ">
-        <div className="container flex justify-between px-4 py-4 mx-auto">
-          <p>© 2025 | Semicolon Inc. | All Rights Reserved.</p>
-          <ul className="flex gap-10">
+        <div className="container flex flex-col items-center justify-between px-4 py-4 mx-auto text-center sm:flex-row sm:text-left">
+          <p className="mb-2 sm:mb-0">
+            © 2025 | Semicolon Inc. | All Rights Reserved.
+          </p>
+          <ul className="flex gap-4">
             <li>Terms of Service</li>
             <li>Privacy Policy</li>
           </ul>

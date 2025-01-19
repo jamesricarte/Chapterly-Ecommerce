@@ -43,6 +43,9 @@ export default {
         "gradient-2":
           "linear-gradient(to bottom, #006D77 0%, #9CD1CB 40%, #F3F9F9 60%)",
       },
+      screens: {
+        'xs': '480px'
+      }
     },
   },
   plugins: [

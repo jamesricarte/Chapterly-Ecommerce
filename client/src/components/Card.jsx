@@ -12,22 +12,22 @@ const Card = ({
   link,
   cardSize = "w-full",
   ratingDisplay = "flex",
-  cartDisplay,
+  cartDisplay = "hidden",
 }) => {
   return (
     <Link to={link}>
       <div className={`${cardSize}`}>
         <img src={image} className="object-cover w-full mb-2 hover-preset-4" />
         <div className="text-primary-500">
-          <h2 className="text-2xl font-normal">{author}</h2>
-          <div className="flex items-center justify-between text-sm font-light text-primary-300">
+          <h2 className="text-xs font-normal xl:text-2xl">{author}</h2>
+          <div className="flex items-center justify-between font-light text-primary-300">
             <div className="flex flex-col">
-              <div className="flex gap-1 mb-2 text-base">
+              <div className="flex flex-col gap-1 mb-2 text-xs xl:flex-row xl:text-base">
                 <p className="font-light">{price},</p>
                 <p className="">{genre}</p>
               </div>
               <div
-                className={`${ratingDisplay} gap-2 text-primary-300 text-lg`}
+                className={`${ratingDisplay} gap-2 text-primary-300 text-xs xl:text-lg`}
               >
                 <FaStar />
                 <FaStar />
@@ -36,9 +36,9 @@ const Card = ({
                 <FaStar />
               </div>
             </div>
-            <div className="p-2 bg-primary-500 hover-preset-1">
+            <div className={`${cartDisplay} p-2 bg-primary-500 hover-preset-1`}>
               <MdOutlineShoppingCart
-                className={`text-lg text-white ${cartDisplay} `}
+                className={`xl:text-lg text-sm text-white`}
               />
             </div>
           </div>

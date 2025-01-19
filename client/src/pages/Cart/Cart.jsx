@@ -22,19 +22,19 @@ const Cart = () => {
     <>
       <Nav />
       <main className=" bg-secondary-50">
-        <div className="container flex h-screen gap-5 px-4 py-8 mx-auto ">
-          <div className="flex flex-col flex-grow ">
+        <div className="container flex flex-col gap-5 px-4 py-8 mx-auto lg:flex-row">
+          <div className="flex flex-col flex-grow order-2 md:mt-3 lg:mt-0 lg:order-first">
             <div className="flex items-center w-full gap-4 bg-white shadow-md pl-9 py-7">
-              <div className="w-8 h-8 border-[3px] border-primary-500"></div>
-              <h3 className="text-2xl font-semibold text-primary-500">
+              <div className="sm:w-5 sm:h-5 w-4 h-4 md:w-6 md:h-6 border-[3px] border-primary-500 cursor-pointer"></div>
+              <h3 className="text-base font-semibold sm:text-lg md:text-2xl text-primary-500">
                 ALL ITEMS (2)
               </h3>
             </div>
             <div className="flex flex-col gap-6">
-              <div className="flex gap-5 pl-8 bg-white shadow-md p-7 mt-9">
-                <div className="flex items-center gap-6">
-                  <div className="w-8 h-8 border-[3px] border-primary-500"></div>
-                  <div className="w-40">
+              <div className="flex gap-3 pl-5 mt-5 bg-white shadow-md sm:gap-5 sm:pl-8 py-7 pr-7 md:mt-9">
+                <div className="flex items-center gap-3 sm:gap-6">
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 border-[3px] border-primary-500 cursor-pointer"></div>
+                  <div className="w-16 sm:w-20 md:w-40">
                     <img className="object-cover w-full" src={ProductImage1} />
                   </div>
                 </div>
@@ -42,17 +42,17 @@ const Cart = () => {
                 <div className="flex flex-col justify-between w-full">
                   <div>
                     <div className="flex items-center justify-between w-full">
-                      <h2 className="text-2xl font-semibold text-black">
+                      <h2 className="text-sm font-semibold text-black sm:text-lg md:text-2xl max-w-80">
                         THE SUBTLE ART OF NOT GIVING A F*CK
                       </h2>
-                      <p className="font-semibold text-[#CECECE] text-base">
+                      <p className="font-semibold text-[#CECECE] text-xs sm:text-sm md:text-base">
                         In stock
                       </p>
                     </div>
-                    <h3 className="text-xl font-semibold text-secondary-300">
+                    <h3 className="text-xs font-semibold sm:text-sm md:text-xl text-secondary-300">
                       MARK MANSON
                     </h3>
-                    <div className="flex gap-2 mt-3 text-lg text-primary-300">
+                    <div className="flex gap-2 mt-3 mb-2 text-xs md:mb-0 sm:text-sm md:text-lg text-primary-300">
                       <FaStar />
                       <FaStar />
                       <FaStar />
@@ -60,69 +60,22 @@ const Cart = () => {
                       <FaStar />
                     </div>
                   </div>
-                  <div className="flex justify-between">
-                    <h4 className="text-xl font-semibold text-primary-500">
+                  <div className="flex items-end justify-between">
+                    <h4 className="text-sm font-semibold sm:text-base md:text-xl text-primary-500">
                       $12.95
                     </h4>
-                    <div className="flex items-center gap-3 text-primary-500">
-                      <div className="border-2 border-[#CECECE] py-1 px-6 flex items-center gap-3 cursor-pointer">
-                        <h5 className="font-medium ">Qty: 1</h5>
-                        <BsChevronDown />
+                    <div className="flex items-center gap-1 sm:gap-3 text-primary-500">
+                      <div className="border-2 border-[#CECECE] md:py-1 md:px-6 flex items-center gap-1 sm:gap-3 cursor-pointer">
+                        <h5 className="text-xs font-medium sm:text-sm md:text-base">
+                          Qty: 1
+                        </h5>
+                        <BsChevronDown className="text-xs md:text-lg" />
                       </div>
 
-                      <div className="flex items-center gap-3 text-2xl text-primary-500">
-                        <IoIosSearch />
-                        <HiOutlineHeart />
-                        <RiDeleteBinLine />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex gap-5 pl-8 bg-white shadow-md p-7">
-                <div className="flex items-center gap-6">
-                  <div className="w-8 h-8 border-[3px] border-primary-500"></div>
-                  <div className="w-40">
-                    <img className="object-cover w-full" src={ProductImage1} />
-                  </div>
-                </div>
-
-                <div className="flex flex-col justify-between w-full">
-                  <div>
-                    <div className="flex items-center justify-between w-full">
-                      <h2 className="text-2xl font-semibold text-black">
-                        THE SUBTLE ART OF NOT GIVING A F*CK
-                      </h2>
-                      <p className="font-semibold text-[#CECECE] text-base">
-                        In stock
-                      </p>
-                    </div>
-                    <h3 className="text-xl font-semibold text-secondary-300">
-                      MARK MANSON
-                    </h3>
-                    <div className="flex gap-2 mt-3 text-lg text-primary-300">
-                      <FaStar />
-                      <FaStar />
-                      <FaStar />
-                      <FaStar />
-                      <FaStar />
-                    </div>
-                  </div>
-                  <div className="flex justify-between">
-                    <h4 className="text-xl font-semibold text-primary-500">
-                      $12.95
-                    </h4>
-                    <div className="flex items-center gap-3 text-primary-500">
-                      <div className="border-2 border-[#CECECE] py-1 px-6 flex items-center gap-3 cursor-pointer">
-                        <h5 className="font-medium">Qty: 1</h5>
-                        <BsChevronDown />
-                      </div>
-
-                      <div className="flex items-center gap-3 text-2xl">
-                        <IoIosSearch />
-                        <HiOutlineHeart />
-                        <RiDeleteBinLine />
+                      <div className="flex items-center gap-1 text-lg sm:gap-3 sm:text-xl md:text-2xl text-primary-500">
+                        <IoIosSearch className="cursor-pointer" />
+                        <HiOutlineHeart className="cursor-pointer" />
+                        <RiDeleteBinLine className="cursor-pointer" />
                       </div>
                     </div>
                   </div>
@@ -131,30 +84,30 @@ const Cart = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 w-[500px]">
-            <div className="flex flex-col w-full gap-3 bg-white shadow-md p-7">
-              <h3 className="mt-1 mb-2 text-2xl font-semibold text-primary-500">
+          <div className="flex flex-col gap-5 w-full lg:w-[500px] order-1 lg:order-last">
+            <div className="flex flex-col gap-3 bg-white shadow-md lg:w-full p-7">
+              <h3 className="mt-1 mb-2 text-lg font-semibold sm:text-2xl text-primary-500">
                 Order Summary
               </h3>
-              <div className="flex justify-between mb-1">
+              <div className="flex justify-between mb-1 text-sm sm:text-base">
                 <p className="text-[#484848]">Subtotal(3 Items):</p>
                 <p className="text-[#484848]">$33.57</p>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between text-sm sm:text-base">
                 <p className="text-[#484848]">Estimated Shipping Fee:</p>
                 <p className="text-[#484848]">$4.99</p>
               </div>
               <div className="h-[1px] bg-secondary-500 mt-3"></div>
-              <div className="flex justify-between">
+              <div className="flex justify-between text-sm sm:text-base">
                 <p className="text-[#484848] font-semibold mb-2">Total</p>
                 <p className="text-[#484848] font-semibold">$38.56</p>
               </div>
-              <button className="w-full py-3 font-bold text-white px-11 bg-primary-500 hover-preset-1">
+              <button className="w-full py-3 text-sm font-bold text-white sm:text-base px-11 bg-primary-500 hover-preset-1">
                 Checkout Now
               </button>
             </div>
 
-            <div className="bg-white shadow-md p-7">
+            <div className="hidden bg-white shadow-md p-7 lg:block">
               <h3 className="mb-3 text-2xl font-semibold text-primary-500">
                 We Accept
               </h3>
@@ -172,7 +125,7 @@ const Cart = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-between py-4 shadow-md px-7 bg-secondary-100">
+            <div className="items-center justify-between hidden py-4 shadow-md lg:flex px-7 bg-secondary-100">
               <div>
                 <h4 className="font-semibold text-[#484848]">
                   20% Discount Voucher
@@ -188,7 +141,7 @@ const Cart = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-between py-4 shadow-md px-7 bg-secondary-100">
+            <div className="items-center justify-between hidden py-4 shadow-md lg:flex px-7 bg-secondary-100">
               <div>
                 <h4 className="font-semibold text-[#484848]">
                   20% Discount Voucher
