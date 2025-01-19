@@ -20,6 +20,9 @@ import { Link } from "react-router-dom";
 import Slider from "../../components/Slider";
 
 const Home = () => {
+  const storedUser = localStorage.getItem("user");
+  console.log("Logged in account:", JSON.parse(storedUser));
+
   return (
     <>
       <Nav />

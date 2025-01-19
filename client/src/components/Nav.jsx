@@ -10,11 +10,15 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 const Nav = () => {
   const location = useLocation();
   const isActive = (path) =>
     location.pathname === path ? "text-secondary-500" : "";
+
+  const { user, logout } = useAuth();
+
   return (
     <nav className="shadow-md">
       <div className="text-sm text-white bg-secondary-500">
@@ -81,6 +85,13 @@ const Nav = () => {
             <Link to="/cart">
               <FaShoppingCart className="transition duration-200 ease-in-out hover:text-primary-500" />
             </Link>
+            <button
+              onClick={() => {
+                logout();
+              }}
+            >
+              Logout
+            </button>
           </div>
         </div>
       </div>

@@ -13,25 +13,28 @@ import UserPage from "./pages/User/User";
 import Contact from "./pages/Contact/Contact";
 import Deals from "./pages/Deals/Deals";
 import Community from "./pages/Community/Community";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/deals" element={<Deals />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/community" element={<Community />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/help" element={<HelpPage />} />
-        <Route path="/user" element={<UserPage />} />
-      </Routes>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/deals" element={<Deals />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/help" element={<HelpPage />} />
+          <Route path="/user" element={<UserPage />} />
+        </Routes>
+      </AuthProvider>
     </>
   );
 }

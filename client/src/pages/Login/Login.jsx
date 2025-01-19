@@ -5,8 +5,31 @@ import FacebookLogo from "../../assets/images/brand_logos/facebook.png";
 import AppleLogo from "../../assets/images/brand_logos/apple.png";
 import backgroundImage from "../../assets/images/backgrounds/BG_Auth.jpg";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import { useState } from "react";
 
 const Login = () => {
+  const { login } = useAuth();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const loginUser = (e) => {
+    e.preventDefault();
+    try {
+      if (!email || !password) return;
+
+      const userData = {
+        email,
+        password,
+      };
+      login(userData);
+
+    } catch (error) {
+      console.error("Login failed:", error);
+    }
+  };
+
   return (
     <>
       <main className="flex min-h-screen">
@@ -46,7 +69,7 @@ const Login = () => {
               </p>
             </div>
 
-            <form action="">
+            <form action="" onSubmit={loginUser}>
               <div className="flex flex-col mb-3">
                 <label
                   className="text-sm text-primary-500 font-medium mb-1.5"
@@ -58,6 +81,9 @@ const Login = () => {
                   className="p-2 border rounded-md"
                   id="email"
                   type="email"
+                  required={true}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="flex flex-col">
@@ -71,6 +97,9 @@ const Login = () => {
                   className="p-2 border rounded-md"
                   id="password"
                   type="password"
+                  required={true}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <div className="flex items-center justify-between my-4">

@@ -155,6 +155,35 @@ const Product = () => {
             />
           </div>
         </div>
+
+        {/* Assignment #1*/}
+        <div className="flex items-center gap-2 mt-24 mb-8">
+          <p className="text-lg font-semibold">Quantity</p>
+          <input
+            className="w-24 p-1 mr-2 placeholder-black border border-black "
+            type="number"
+            min="1"
+            max="100"
+            placeholder="1"
+          />
+        </div>
+        <div className="flex items-center gap-4 mb-10 ">
+          <button className="p-4 rounded text-sm text-white bg-primary-500 w-[350px] hover-preset-1">
+            Add Quantity
+          </button>
+          <div className="flex gap-2 text-xl text-primary-500">
+            <FaRegHeart />
+            <FiShare2 />
+          </div>
+        </div>
+
+        {/* Assignment #2*/}
+        <div className="mt-24 mb-6 w-36">
+          <img src={SubtleArtJournal} />
+        </div>
+        <button className="p-4 rounded text-sm text-white bg-primary-500 w-[350px] hover-preset-1">
+          Delete this book
+        </button>
       </main>
       <Footer />
     </div>
