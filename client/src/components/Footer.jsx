@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="py-12 text-white bg-secondary-500">
         <div className="container grid grid-cols-1 gap-8 px-4 mx-auto lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 ">
           <div>
-            <h1 className="mb-4 text-2xl font-semibold">Need Help?</h1>
+            <h1 className="mb-4 text-xl font-semibold">Need Help?</h1>
             <ul className="space-y-1 text-base md:text-lg">
               <li>FAQ</li>
               <li>Help</li>
@@ -17,7 +17,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h1 className="mb-4 text-2xl font-semibold">My Account</h1>
+            <h1 className="mb-4 text-xl font-semibold">My Account</h1>
             <ul className="space-y-1 text-base md:text-lg">
               <li>Account</li>
               <li>Register</li>
@@ -28,7 +28,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h1 className="mb-4 text-2xl font-semibold">Follow Us</h1>
+            <h1 className="mb-4 text-xl font-semibold">Follow Us</h1>
             <ul className="space-y-1 text-base md:text-lg">
               <li>Facebook</li>
               <li>Instagram</li>
@@ -39,8 +39,8 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h1 className="mb-4 text-2xl font-semibold">Join Our Newsletter</h1>
-            <p className="text-lg">
+            <h1 className="mb-4 text-xl font-semibold">Join Our Newsletter</h1>
+            <p className="text-base">
               Enter your email to keep updated in our promotions!
             </p>
             <div className="flex flex-col gap-4 mt-5 xl:gap-0 xl:flex-row">

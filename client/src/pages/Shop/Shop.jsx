@@ -103,7 +103,7 @@ const Shop = () => {
               </div>
             </div>
 
-            <div className="xl:mt-12">
+            <div className="container mx-auto xl:mt-12">
               <div className="mb-12 ">
                 <div className="flex items-center justify-between mb-6">
                   <h1 className="text-xl font-bold xl:text-3xl text-primary-500">
@@ -113,13 +113,13 @@ const Shop = () => {
                     <FaCircleChevronLeft className="text-primary-100" />
                     <FaCircleChevronRight className=" hover-preset-5" />
                   </div>
-                  <div className="flex items-center gap-1 mb-4 mr-7 xl:hidden text-primary-500">
+                  <div className="flex items-center gap-1 mb-4 xl:hidden text-primary-500">
                     <FiFilter className="text-sm" />
                     <h2 className="text-xs font-semibold">Search Filter</h2>
                   </div>
                 </div>
-                <div className="overflow-x-auto scroll-smooth scrollbar-hide">
-                  <div className="flex gap-8">
+                <div className="overflow-x-auto scrollbar-hide">
+                  <div className="flex gap-4 xl:gap-8">
                     <Card
                       image={EgoEnemy}
                       author="Ryan Holiday"
@@ -161,8 +161,8 @@ const Shop = () => {
                     <FaCircleChevronRight className=" hover-preset-5" />
                   </div>
                 </div>
-                <div className="overflow-x-auto scroll-smooth scrollbar-hide">
-                  <div className="flex gap-8">
+                <div className="overflow-x-auto scrollbar-hide">
+                  <div className="flex gap-4 xl:gap-8">
                     <Card
                       image={EgoEnemy}
                       author="Ryan Holiday"
@@ -204,8 +204,8 @@ const Shop = () => {
                     <FaCircleChevronRight className=" hover-preset-5" />
                   </div>
                 </div>
-                <div className="overflow-x-auto scroll-smooth scrollbar-hide">
-                  <div className="flex gap-8 ">
+                <div className="overflow-x-auto scrollbar-hide">
+                  <div className="flex gap-4 xl:gap-8">
                     <Card
                       image={EgoEnemy}
                       author="Ryan Holiday"
